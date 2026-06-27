@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LearnScroll — Doomscroll your own notes</title>
+<meta name="description" content="LearnScroll turns your notes, slides, and PDFs into a feed you scroll like TikTok. Study by swiping, not cramming." />
+<!-- Open Graph -->
+<meta property="og:title" content="LearnScroll — Doomscroll your own notes" />
+<meta property="og:description" content="You were going to study. You ended up on TikTok. LearnScroll turns your own notes into a feed you actually can't stop scrolling." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://candizdar.github.io/learnscroll-site/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230E0E10'/><rect x='24' y='30' width='52' height='14' rx='5' fill='%2334D399'/><rect x='24' y='52' width='52' height='14' rx='5' fill='%2334D399' opacity='0.55'/></svg>" />
+<style>
+  :root{
+    --bg:#0E0E10; --bg-soft:#16161A; --card:#1C1C22; --line:#2A2A33;
+    --text:#F4F4F5; --muted:#A1A1AA; --accent:#34D399; --accent-2:#22D3EE;
+    --radius:18px; --maxw:560px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.5;
+    -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .glow{position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(60% 40% at 50% 0%, rgba(52,211,153,0.14), transparent 70%);}
+  header{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:20px 22px;max-width:var(--maxw);margin:0 auto}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:-0.4px;font-size:18px}
+  .logo{width:26px;height:26px;border-radius:8px;background:#0E0E10;border:1px solid var(--line);display:flex;flex-direction:column;gap:3px;align-items:center;justify-content:center}
+  .logo span{width:13px;height:3px;border-radius:2px;background:var(--accent)}
+  .logo span:nth-child(2){opacity:.55}
+  .lang{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px}
+  .lang button{background:none;border:none;color:var(--muted);font-weight:700;font-size:13px;padding:5px 11px;border-radius:999px;cursor:pointer}
+  .lang button.on{background:var(--accent);color:#06281C}
+
+  main{position:relative;z-index:2}
+  .hero{text-align:center;padding:46px 0 18px}
+  .eyebrow{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--accent);background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.25);padding:6px 13px;border-radius:999px;margin-bottom:20px}
+  h1{font-size:40px;line-height:1.08;font-weight:850;letter-spacing:-1.2px;margin-bottom:16px}
+  h1 .hl{color:var(--accent)}
+  .sub{font-size:17px;color:var(--muted);max-width:430px;margin:0 auto 26px}
+
+  /* phone with REAL app screenshots */
+  .phone{position:relative;width:248px;margin:6px auto 14px;aspect-ratio:9/19.5;background:#000;border-radius:36px;border:8px solid #1c1c22;box-shadow:0 34px 64px -22px rgba(0,0,0,.75),0 0 0 1px var(--line);overflow:hidden}
+  .phone .shot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s ease}
+  .phone .shot.on{opacity:1}
+  .notch{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:78px;height:22px;background:#000;border-radius:14px;z-index:3}
+  .dots{display:flex;gap:6px;justify-content:center;margin:0 auto 26px}
+  .dots i{width:6px;height:6px;border-radius:50%;background:var(--line);transition:background .3s,width .3s}
+  .dots i.on{background:var(--accent);width:18px;border-radius:3px}
+  .swipehint{font-size:11.5px;color:var(--muted);text-align:center;margin:-4px 0 14px;letter-spacing:.3px}
+
+  .form{display:flex;gap:8px;max-width:420px;margin:0 auto;flex-wrap:wrap}
+  .form input{flex:1;min-width:180px;background:var(--card);border:1px solid var(--line);color:var(--text);padding:14px 16px;border-radius:13px;font-size:15px;outline:none}
+  .form input:focus{border-color:var(--accent)}
+  .form button{background:var(--accent);color:#06281C;border:none;font-weight:800;font-size:15px;padding:14px 22px;border-radius:13px;cursor:pointer;transition:transform .1s}
+  .form button:active{transform:scale(.97)}
+  .note{font-size:12.5px;color:var(--muted);margin-top:12px}
+  .msg{font-size:14px;font-weight:600;margin-top:14px;min-height:20px}
+  .msg.ok{color:var(--accent)} .msg.err{color:#f87171}
+
+  section.feat{padding:40px 0 10px}
+  .feat h2{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);text-align:center;margin-bottom:22px;font-weight:700}
+  .steps{display:flex;flex-direction:column;gap:12px}
+  .step{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+  .step .n{flex:0 0 34px;height:34px;border-radius:10px;background:rgba(52,211,153,.12);color:var(--accent);font-weight:800;display:flex;align-items:center;justify-content:center}
+  .step .t{font-size:15px;font-weight:700;margin-bottom:2px}
+  .step .d{font-size:13.5px;color:var(--muted)}
+
+  footer{position:relative;z-index:2;text-align:center;padding:44px 22px 40px;color:var(--muted);font-size:13px}
+  footer a{color:var(--muted);text-decoration:underline}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<header>
+  <div class="brand"><span class="logo"><span></span><span></span></span> LearnScroll</div>
+  <div class="lang">
+    <button id="b-en" class="on" onclick="setLang('en')">EN</button>
+    <button id="b-tr" onclick="setLang('tr')">TR</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <span class="eyebrow" data-en="Coming soon to the App Store" data-tr="Yakında App Store'da">Coming soon to the App Store</span>
+    <h1 data-en='Doomscroll <span class="hl">your own notes</span>.' data-tr='Kendi notlarını <span class="hl">kaydır</span>.'>Doomscroll <span class="hl">your own notes</span>.</h1>
+    <p class="sub" data-en="You were going to study. You ended up on TikTok. LearnScroll turns your notes, slides, and PDFs into a feed you actually can't stop scrolling — except it's all on your exam." data-tr="Ders çalışacaktın, TikTok'ta uyandın. LearnScroll notlarını, slaytlarını ve PDF'lerini durmadan kaydırdığın bir akışa çevirir — ama bu sefer hepsi sınavında çıkacak.">You were going to study. You ended up on TikTok. LearnScroll turns your notes, slides, and PDFs into a feed you actually can't stop scrolling — except it's all on your exam.</p>
+
+    <div class="phone" aria-label="LearnScroll app preview">
+      <div class="notch"></div>
+      <img class="shot on" id="layerA" src="shots/shot1.jpg" alt="LearnScroll app feed preview" />
+      <img class="shot" id="layerB" src="shots/shot2.jpg" alt="" aria-hidden="true" />
+    </div>
+    <div class="dots" id="dots" aria-hidden="true"></div>
+    <p class="swipehint" data-en="↑ real feed from one uploaded PDF" data-tr="↑ tek bir PDF'ten üretilen gerçek akış">↑ real feed from one uploaded PDF</p>
+
+    <form class="form" id="wlForm" onsubmit="return joinWaitlist(event)">
+      <input type="email" id="email" required placeholder="you@email.com" autocomplete="email" />
+      <button type="submit" id="wlBtn" data-en="Get early access" data-tr="Erken erişim al">Get early access</button>
+    </form>
+    <div class="msg" id="msg"></div>
+    <p class="note" data-en="Join the waitlist — we'll email you the moment it's live. No spam." data-tr="Listeye katıl — yayınlandığı an e-posta atarız. Spam yok.">Join the waitlist — we'll email you the moment it's live. No spam.</p>
+  </div>
+
+  <section class="feat">
+    <h2 data-en="How it works" data-tr="Nasıl çalışır">How it works</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><div class="t" data-en="Upload anything" data-tr="Herhangi bir şey yükle">Upload anything</div><div class="d" data-en="A PDF, your slides, or just type a topic." data-tr="Bir PDF, slaytların ya da sadece bir konu yaz.">A PDF, your slides, or just type a topic.</div></div></div>
+      <div class="step"><div class="n">2</div><div><div class="t" data-en="AI makes it a feed" data-tr="Yapay zeka akışa çevirir">AI makes it a feed</div><div class="d" data-en="Short, swipeable cards from your own material." data-tr="Kendi materyalinden kısa, kaydırılabilir kartlar.">Short, swipeable cards from your own material.</div></div></div>
+      <div class="step"><div class="n">3</div><div><div class="t" data-en="Scroll. That's studying now." data-tr="Kaydır. Çalışmak artık bu.">Scroll. That's studying now.</div><div class="d" data-en="Spaced repetition runs in the background. Quizzes are optional." data-tr="Aralıklı tekrar arka planda çalışır. Quizler opsiyonel.">Spaced repetition runs in the background. Quizzes are optional.</div></div></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div data-en="No ads. We don't sell your data." data-tr="Reklam yok. Verini satmıyoruz.">No ads. We don't sell your data.</div>
+  <div style="margin-top:8px">© <span id="yr"></span> LearnScroll · <a href="https://candizdar.github.io/learnscroll-legal/privacy.html">Privacy</a> · <a href="https://candizdar.github.io/learnscroll-legal/support.html">Support</a></div>
+</footer>
+
+<script>
+  // --- Supabase waitlist (anon insert only; RLS-protected) ---
+  const SB_URL = "https://jalszurarmsrhtqzzjib.supabase.co";
+  const SB_KEY = "sb_publishable_3gVavmD6rzUULMf_2IhuQQ_eGzJfJMs";
+
+  const T = {
+    sending:{en:"Sending…",tr:"Gönderiliyor…"},
+    ok:{en:"You're on the list. 🎉 Watch your inbox.",tr:"Listedesin. 🎉 Gelen kutunu kontrol et."},
+    dup:{en:"You're already on the list. 👍",tr:"Zaten listedesin. 👍"},
+    bad:{en:"Enter a valid email.",tr:"Geçerli bir e-posta gir."},
+    err:{en:"Something broke. Try again.",tr:"Bir şeyler ters gitti. Tekrar dene."}
+  };
+  let LANG = (navigator.language||"en").toLowerCase().startsWith("tr") ? "tr" : "en";
+
+  function setLang(l){
+    LANG=l;
+    document.getElementById("b-en").classList.toggle("on",l==="en");
+    document.getElementById("b-tr").classList.toggle("on",l==="tr");
+    document.documentElement.lang=l;
+    document.querySelectorAll("[data-"+l+"]").forEach(el=>{ el.innerHTML = el.getAttribute("data-"+l); });
+    startCarousel();
+  }
+
+  async function joinWaitlist(e){
+    e.preventDefault();
+    const email=document.getElementById("email").value.trim();
+    const msg=document.getElementById("msg");
+    const btn=document.getElementById("wlBtn");
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ msg.className="msg err"; msg.textContent=T.bad[LANG]; return false; }
+    btn.disabled=true; msg.className="msg"; msg.textContent=T.sending[LANG];
+    try{
+      const res=await fetch(SB_URL+"/rest/v1/waitlist",{
+        method:"POST",
+        headers:{ "apikey":SB_KEY, "Authorization":"Bearer "+SB_KEY, "Content-Type":"application/json", "Prefer":"return=minimal" },
+        body:JSON.stringify({ email, source:"landing", locale:LANG, platform:(/iphone|ipad/i.test(navigator.userAgent)?"ios":"web"), referrer:document.referrer||null })
+      });
+      if(res.ok){ msg.className="msg ok"; msg.textContent=T.ok[LANG]; document.getElementById("wlForm").reset(); }
+      else if(res.status===409){ msg.className="msg ok"; msg.textContent=T.dup[LANG]; }
+      else { msg.className="msg err"; msg.textContent=T.err[LANG]; }
+    }catch(_){ msg.className="msg err"; msg.textContent=T.err[LANG]; }
+    btn.disabled=false; return false;
+  }
+
+  document.getElementById("yr").textContent=new Date().getFullYear();
+
+  // --- real screenshot carousel (language-aware, two-layer crossfade) ---
+  let _carTimer=null, _front=null, _back=null;
+  function startCarousel(){
+    const SHOT_SETS={
+      en:["shots/shot1.jpg","shots/shot2.jpg","shots/shot3.jpg","shots/shot4.jpg","shots/shot5.jpg","shots/shot6.jpg"],
+      tr:["shots-tr/tr1.jpg","shots-tr/tr2.jpg","shots-tr/tr3.jpg","shots-tr/tr4.jpg","shots-tr/tr5.jpg","shots-tr/tr6.jpg","shots-tr/tr7.jpg"]
+    };
+    const A=document.getElementById("layerA"), B=document.getElementById("layerB"), dotsBox=document.getElementById("dots");
+    const set=SHOT_SETS[LANG]||SHOT_SETS.en;
+    if(_carTimer){ clearInterval(_carTimer); _carTimer=null; }
+    set.forEach(s=>{ const im=new Image(); im.src=s; }); // preload
+    A.src=set[0]; A.classList.add("on"); B.classList.remove("on");
+    _front=A; _back=B;
+    dotsBox.innerHTML="";
+    set.forEach((_,k)=>{ const d=document.createElement("i"); if(k===0)d.classList.add("on"); dotsBox.appendChild(d); });
+    const dots=[...dotsBox.children];
+    let i=0;
+    _carTimer=setInterval(()=>{
+      i=(i+1)%set.length;
+      _back.src=set[i];
+      _back.classList.add("on"); _front.classList.remove("on");
+      const t=_front; _front=_back; _back=t;
+      dots.forEach((d,k)=>d.classList.toggle("on",k===i));
+    },2800);
+  }
+
+  setLang(LANG); // init language + carousel
+</script>
+</body>
+</html>
