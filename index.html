@@ -135,7 +135,9 @@
     bad:{en:"Enter a valid email.",tr:"Geçerli bir e-posta gir."},
     err:{en:"Something broke. Try again.",tr:"Bir şeyler ters gitti. Tekrar dene."}
   };
-  let LANG = (navigator.language||"en").toLowerCase().startsWith("tr") ? "tr" : "en";
+  // Cihaz diline göre aç: tercih listesinde Türkçe varsa TR, yoksa EN
+  const _navLangs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || "en"];
+  let LANG = _navLangs.some(l => (l||"").toLowerCase().startsWith("tr")) ? "tr" : "en";
 
   function setLang(l){
     LANG=l;
