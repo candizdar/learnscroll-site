@@ -60,6 +60,8 @@
   .form input:focus{border-color:var(--accent)}
   .form button{background:var(--accent);color:#06281C;border:none;font-weight:800;font-size:15px;padding:14px 22px;border-radius:13px;cursor:pointer;transition:transform .1s}
   .form button:active{transform:scale(.97)}
+  .dlbtn{display:inline-block;background:var(--accent);color:#06281C;font-weight:800;font-size:16px;padding:16px 30px;border-radius:13px;text-decoration:none;transition:transform .1s}
+  .dlbtn:active{transform:scale(.97)}
   .note{font-size:12.5px;color:var(--muted);margin-top:12px}
   .msg{font-size:14px;font-weight:600;margin-top:14px;min-height:20px}
   .msg.ok{color:var(--accent)} .msg.err{color:#f87171}
@@ -89,7 +91,7 @@
 
 <main class="wrap">
   <div class="hero">
-    <span class="eyebrow" data-en="Coming soon to the App Store" data-tr="Yakında App Store'da">Coming soon to the App Store</span>
+    <span class="eyebrow" id="eyebrow" data-en="Now on the App Store" data-tr="App Store'da yayında">Now on the App Store</span>
     <h1 data-en='Doomscroll <span class="hl">your own notes</span>.' data-tr='Kendi notlarını <span class="hl">kaydır</span>.'>Doomscroll <span class="hl">your own notes</span>.</h1>
     <p class="sub" data-en="You were going to study. You ended up on TikTok. LearnScroll turns your notes, slides, and PDFs into a feed you actually can't stop scrolling — except it's all on your exam." data-tr="Ders çalışacaktın, TikTok'ta uyandın. LearnScroll notlarını, slaytlarını ve PDF'lerini durmadan kaydırdığın bir akışa çevirir — ama bu sefer hepsi sınavında çıkacak.">You were going to study. You ended up on TikTok. LearnScroll turns your notes, slides, and PDFs into a feed you actually can't stop scrolling — except it's all on your exam.</p>
 
@@ -101,12 +103,21 @@
     <div class="dots" id="dots" aria-hidden="true"></div>
     <p class="swipehint" data-en="↑ real feed from one uploaded PDF" data-tr="↑ tek bir PDF'ten üretilen gerçek akış">↑ real feed from one uploaded PDF</p>
 
-    <form class="form" id="wlForm" onsubmit="return joinWaitlist(event)">
-      <input type="email" id="email" required placeholder="you@email.com" autocomplete="email" />
-      <button type="submit" id="wlBtn" data-en="Get early access" data-tr="Erken erişim al">Get early access</button>
-    </form>
-    <div class="msg" id="msg"></div>
-    <p class="note" data-en="Join the waitlist — we'll email you the moment it's live. No spam." data-tr="Listeye katıl — yayınlandığı an e-posta atarız. Spam yok.">Join the waitlist — we'll email you the moment it's live. No spam.</p>
+    <!-- iOS & desktop: App Store download (default visible; JS swaps to waitlist on Android) -->
+    <div id="dl">
+      <a class="dlbtn" href="https://apps.apple.com/app/id6774384463" data-en="⬇  Download on the App Store" data-tr="⬇  App Store'dan indir">⬇  Download on the App Store</a>
+      <p class="note" data-en="Free · iPhone &amp; iPad" data-tr="Ücretsiz · iPhone ve iPad">Free · iPhone &amp; iPad</p>
+    </div>
+
+    <!-- Android: no app yet → collect waitlist -->
+    <div id="wl" style="display:none">
+      <form class="form" id="wlForm" onsubmit="return joinWaitlist(event)">
+        <input type="email" id="email" required placeholder="you@email.com" autocomplete="email" />
+        <button type="submit" id="wlBtn" data-en="Notify me on Android" data-tr="Android'e gelince haber ver">Notify me on Android</button>
+      </form>
+      <div class="msg" id="msg"></div>
+      <p class="note" data-en="On iPhone now — Android's coming. Join the list, we'll email you." data-tr="Şu an iPhone'da — Android yolda. Listeye katıl, e-posta atarız.">On iPhone now — Android's coming. Join the list, we'll email you.</p>
+    </div>
   </div>
 
   <section class="feat">
@@ -196,6 +207,18 @@
       dots.forEach((d,k)=>d.classList.toggle("on",k===i));
     },2800);
   }
+
+  // Platform-aware CTA: iOS & desktop → App Store button; Android → waitlist.
+  // Runs BEFORE setLang so the eyebrow shows the right (translated) copy.
+  (function(){
+    if(/Android/i.test(navigator.userAgent || "")){
+      document.getElementById("dl").style.display="none";
+      document.getElementById("wl").style.display="block";
+      var eb=document.getElementById("eyebrow");
+      eb.setAttribute("data-en","Coming soon to Android");
+      eb.setAttribute("data-tr","Android'e yakında geliyor");
+    }
+  })();
 
   setLang(LANG); // init language + carousel
 </script>
