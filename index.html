@@ -3,224 +3,275 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>LearnScroll — Doomscroll your own notes</title>
-<meta name="description" content="LearnScroll turns your notes, slides, and PDFs into a feed you scroll like TikTok. Study by swiping, not cramming." />
-<!-- Open Graph -->
-<meta property="og:title" content="LearnScroll — Doomscroll your own notes" />
-<meta property="og:description" content="You were going to study. You ended up on TikTok. LearnScroll turns your own notes into a feed you actually can't stop scrolling." />
+<title>LearnScroll: Turn any PDF into TikTok-style study videos</title>
+<meta name="description" content="LearnScroll is an iPhone app that turns PDFs, lecture slides, Word docs and photos of your notes into a feed of short TikTok-style study videos, with quick quizzes and spaced repetition." />
+<link rel="canonical" href="https://learnscroll.app/" />
+<link rel="alternate" hreflang="en" href="https://learnscroll.app/" />
+<link rel="alternate" hreflang="tr" href="https://learnscroll.app/tr/" />
+<link rel="alternate" hreflang="x-default" href="https://learnscroll.app/" />
+<link rel="alternate" type="text/markdown" href="https://learnscroll.app/llms-full.txt" title="LearnScroll for AI assistants" />
+<meta name="apple-itunes-app" content="app-id=6774384463" />
+<meta property="og:site_name" content="LearnScroll" />
+<meta property="og:title" content="LearnScroll: Turn any PDF into TikTok-style study videos" />
+<meta property="og:description" content="Upload a PDF, slides or a photo of your notes. LearnScroll turns it into a feed of short study videos you swipe like TikTok, with quizzes and spaced repetition." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://learnscroll.app/" />
+<meta property="og:image" content="https://learnscroll.app/shots/shot1.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230E0E10'/><rect x='24' y='30' width='52' height='14' rx='5' fill='%2334D399'/><rect x='24' y='52' width='52' height='14' rx='5' fill='%2334D399' opacity='0.55'/></svg>" />
-<style>
-  :root{
-    --bg:#0E0E10; --bg-soft:#16161A; --card:#1C1C22; --line:#2A2A33;
-    --text:#F4F4F5; --muted:#A1A1AA; --accent:#34D399; --accent-2:#22D3EE;
-    --radius:18px; --maxw:560px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
-    background:var(--bg); color:var(--text); line-height:1.5;
-    -webkit-font-smoothing:antialiased; overflow-x:hidden;
-  }
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
-  .glow{position:fixed;inset:0;z-index:0;pointer-events:none;
-    background:radial-gradient(60% 40% at 50% 0%, rgba(52,211,153,0.14), transparent 70%);}
-  header{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:20px 22px;max-width:var(--maxw);margin:0 auto}
-  .brand{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:-0.4px;font-size:18px}
-  .logo{width:26px;height:26px;border-radius:8px;background:#0E0E10;border:1px solid var(--line);display:flex;flex-direction:column;gap:3px;align-items:center;justify-content:center}
-  .logo span{width:13px;height:3px;border-radius:2px;background:var(--accent)}
-  .logo span:nth-child(2){opacity:.55}
-  .lang{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px}
-  .lang button{background:none;border:none;color:var(--muted);font-weight:700;font-size:13px;padding:5px 11px;border-radius:999px;cursor:pointer}
-  .lang button.on{background:var(--accent);color:#06281C}
-
-  main{position:relative;z-index:2}
-  .hero{text-align:center;padding:46px 0 18px}
-  .eyebrow{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--accent);background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.25);padding:6px 13px;border-radius:999px;margin-bottom:20px}
-  h1{font-size:40px;line-height:1.08;font-weight:850;letter-spacing:-1.2px;margin-bottom:16px}
-  h1 .hl{color:var(--accent)}
-  .sub{font-size:17px;color:var(--muted);max-width:430px;margin:0 auto 26px}
-
-  /* phone with REAL app screenshots */
-  .phone{position:relative;width:248px;margin:6px auto 14px;aspect-ratio:9/19.5;background:#000;border-radius:36px;border:8px solid #1c1c22;box-shadow:0 34px 64px -22px rgba(0,0,0,.75),0 0 0 1px var(--line);overflow:hidden}
-  .phone .shot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s ease}
-  .phone .shot.on{opacity:1}
-  .notch{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:78px;height:22px;background:#000;border-radius:14px;z-index:3}
-  .dots{display:flex;gap:6px;justify-content:center;margin:0 auto 26px}
-  .dots i{width:6px;height:6px;border-radius:50%;background:var(--line);transition:background .3s,width .3s}
-  .dots i.on{background:var(--accent);width:18px;border-radius:3px}
-  .swipehint{font-size:11.5px;color:var(--muted);text-align:center;margin:-4px 0 14px;letter-spacing:.3px}
-
-  .form{display:flex;gap:8px;max-width:420px;margin:0 auto;flex-wrap:wrap;justify-content:center}
-  @media(max-width:480px){ .form input,.form button{flex:1 1 100%} }
-  .form input{flex:1;min-width:180px;background:var(--card);border:1px solid var(--line);color:var(--text);padding:14px 16px;border-radius:13px;font-size:15px;outline:none}
-  .form input:focus{border-color:var(--accent)}
-  .form button{background:var(--accent);color:#06281C;border:none;font-weight:800;font-size:15px;padding:14px 22px;border-radius:13px;cursor:pointer;transition:transform .1s}
-  .form button:active{transform:scale(.97)}
-  .dlbtn{display:inline-block;background:var(--accent);color:#06281C;font-weight:800;font-size:16px;padding:16px 30px;border-radius:13px;text-decoration:none;transition:transform .1s}
-  .dlbtn:active{transform:scale(.97)}
-  .note{font-size:12.5px;color:var(--muted);margin-top:12px}
-  .msg{font-size:14px;font-weight:600;margin-top:14px;min-height:20px}
-  .msg.ok{color:var(--accent)} .msg.err{color:#f87171}
-
-  section.feat{padding:40px 0 10px}
-  .feat h2{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);text-align:center;margin-bottom:22px;font-weight:700}
-  .steps{display:flex;flex-direction:column;gap:12px}
-  .step{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
-  .step .n{flex:0 0 34px;height:34px;border-radius:10px;background:rgba(52,211,153,.12);color:var(--accent);font-weight:800;display:flex;align-items:center;justify-content:center}
-  .step .t{font-size:15px;font-weight:700;margin-bottom:2px}
-  .step .d{font-size:13.5px;color:var(--muted)}
-
-  footer{position:relative;z-index:2;text-align:center;padding:44px 22px 40px;color:var(--muted);font-size:13px}
-  footer a{color:var(--muted);text-decoration:underline}
-  .hidden{display:none}
-</style>
+<link rel="stylesheet" href="/assets/site.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://learnscroll.app/#org",
+      "name": "LearnScroll",
+      "url": "https://learnscroll.app/",
+      "founder": { "@type": "Person", "name": "Can Dizdar" },
+      "sameAs": [
+        "https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://learnscroll.app/#website",
+      "url": "https://learnscroll.app/",
+      "name": "LearnScroll",
+      "inLanguage": ["en", "tr"],
+      "publisher": { "@id": "https://learnscroll.app/#org" }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://learnscroll.app/#app",
+      "name": "LearnScroll: Study Shorts",
+      "alternateName": "LearnScroll",
+      "description": "An iPhone app that turns PDFs, lecture slides, Word documents, text files, photos of notes or a typed topic into a feed of short TikTok-style study videos, with quizzes every 10 videos and spaced repetition.",
+      "operatingSystem": "iOS 16.4 or later",
+      "applicationCategory": "EducationalApplication",
+      "applicationSubCategory": "Study tools",
+      "inLanguage": ["en", "tr"],
+      "url": "https://learnscroll.app/",
+      "downloadUrl": "https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463",
+      "installUrl": "https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463",
+      "screenshot": [
+        "https://learnscroll.app/shots/shot1.jpg",
+        "https://learnscroll.app/shots/shot3.jpg"
+      ],
+      "featureList": [
+        "Turn PDF, PowerPoint (.pptx), Word (.docx) and text files into short study videos",
+        "Turn photos of handwritten or printed notes into study videos",
+        "Generate a study feed from a typed topic without a file",
+        "Vertical swipe feed like TikTok or Reels",
+        "Quick quiz every 10 videos",
+        "Spaced repetition brings older videos back",
+        "Videos in English or Turkish, detected from the material",
+        "No ads"
+      ],
+      "offers": [
+        { "@type": "Offer", "name": "LearnScroll Pro (monthly)", "price": "4.99", "priceCurrency": "USD", "category": "subscription" },
+        { "@type": "Offer", "name": "LearnScroll Pro (yearly, 3-day free trial for new subscribers)", "price": "29.99", "priceCurrency": "USD", "category": "subscription" }
+      ],
+      "author": { "@type": "Person", "name": "Can Dizdar" },
+      "publisher": { "@id": "https://learnscroll.app/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://learnscroll.app/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is there an app that turns a PDF into TikTok-style study videos?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. LearnScroll is an iPhone app that turns a PDF, lecture slides, a Word doc or a photo of your notes into a feed of short vertical study videos you swipe through like TikTok. Each video covers one idea from your material, a quick quiz appears every 10 videos, and spaced repetition brings older videos back before you forget them." } },
+        { "@type": "Question", "name": "What files can I turn into study videos?",
+          "acceptedAnswer": { "@type": "Answer", "text": "PDF, PowerPoint (.pptx), Word (.docx) and plain text files, plus photos of printed or handwritten notes from your camera or photo library. If you have no file, you can type a topic and LearnScroll builds the feed from that." } },
+        { "@type": "Question", "name": "How long does it take to make the videos?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Usually 1 to 3 minutes. Generation runs on the server, so you can leave the app; you get a notification when the feed is ready." } },
+        { "@type": "Question", "name": "Is LearnScroll free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Making videos needs LearnScroll Pro: $4.99 per month or $29.99 per year in the US App Store (local prices vary). The yearly plan starts with a 3-day free trial for new subscribers. Pro includes up to 12 uploads a month and up to 150 key ideas per upload. There are no ads." } },
+        { "@type": "Question", "name": "Is LearnScroll on Android?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Not yet. LearnScroll is on the App Store for iPhone (iOS 16.4 or later) and runs on iPad. Android users can join the waitlist on learnscroll.app." } },
+        { "@type": "Question", "name": "What languages does LearnScroll support?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Videos are made in English or Turkish. By default the language is detected from your material, and you can pick it yourself before creating. The app itself is in English and Turkish." } },
+        { "@type": "Question", "name": "How is LearnScroll different from PDF-to-brainrot video generators?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Brainrot generators usually make one long video with an AI voice reading your text over gameplay footage. LearnScroll splits your material into many short videos, one idea each, in a feed you scroll, and adds quizzes and spaced repetition so you review instead of just watching once." } },
+        { "@type": "Question", "name": "Is the AI-generated content accurate?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Videos are written from your own material rather than from general knowledge, which keeps them close to what you will be tested on. AI can still make mistakes, so treat the feed as review and check key facts against your notes." } }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="glow"></div>
-<header>
-  <div class="brand"><span class="logo"><span></span><span></span></span> LearnScroll</div>
-  <div class="lang">
-    <button id="b-en" class="on" onclick="setLang('en')">EN</button>
-    <button id="b-tr" onclick="setLang('tr')">TR</button>
-  </div>
+<header class="top">
+  <a class="brand" href="/"><span class="logo"><span></span><span></span></span> LearnScroll</a>
+  <nav class="links" aria-label="Site">
+    <a href="/how-to-turn-pdf-into-study-videos/">Guide</a>
+    <a href="/compare/">Compare</a>
+    <a href="/tr/" hreflang="tr" lang="tr">Türkçe</a>
+  </nav>
 </header>
 
 <main class="wrap">
   <div class="hero">
-    <span class="eyebrow" id="eyebrow" data-en="Now on the App Store" data-tr="App Store'da yayında">Now on the App Store</span>
-    <h1 data-en='Doomscroll <span class="hl">your own notes</span>.' data-tr='Kendi notlarını <span class="hl">kaydır</span>.'>Doomscroll <span class="hl">your own notes</span>.</h1>
-    <p class="sub" data-en="You were going to study. You ended up on TikTok. LearnScroll turns your notes, slides, and PDFs into a feed you actually can't stop scrolling — except it's all on your exam." data-tr="Ders çalışacaktın, TikTok'ta uyandın. LearnScroll notlarını, slaytlarını ve PDF'lerini durmadan kaydırdığın bir akışa çevirir — ama bu sefer hepsi sınavında çıkacak.">You were going to study. You ended up on TikTok. LearnScroll turns your notes, slides, and PDFs into a feed you actually can't stop scrolling — except it's all on your exam.</p>
+    <span class="eyebrow" id="eyebrow">iPhone app · on the App Store</span>
+    <h1>Turn any PDF into <span class="hl">TikTok-style study videos</span>.</h1>
+    <p class="sub">You were going to study. You ended up on TikTok. LearnScroll turns your notes, slides and PDFs into a feed you can't stop scrolling, except everything in it is on your exam.</p>
 
     <div class="phone" aria-label="LearnScroll app preview">
       <div class="notch"></div>
-      <img class="shot on" id="layerA" src="shots/shot1.jpg" alt="LearnScroll app feed preview" />
-      <img class="shot" id="layerB" src="shots/shot2.jpg" alt="" aria-hidden="true" />
+      <img class="shot on" id="layerA" src="shots/shot1.jpg" alt="LearnScroll feed: a short study video about cell organelles, made from an uploaded biology PDF" width="600" height="1298" />
+      <img class="shot" id="layerB" src="shots/shot2.jpg" alt="" aria-hidden="true" width="600" height="1298" />
     </div>
     <div class="dots" id="dots" aria-hidden="true"></div>
-    <p class="swipehint" data-en="↑ real feed from one uploaded PDF" data-tr="↑ tek bir PDF'ten üretilen gerçek akış">↑ real feed from one uploaded PDF</p>
+    <p class="caption">Real feed made from one uploaded biology PDF</p>
 
-    <!-- iOS & desktop: App Store download (default visible; JS swaps to waitlist on Android) -->
     <div id="dl">
-      <a class="dlbtn" href="https://apps.apple.com/app/id6774384463" data-en="⬇  Download on the App Store" data-tr="⬇  App Store'dan indir">⬇  Download on the App Store</a>
-      <p class="note" data-en="Free · iPhone &amp; iPad" data-tr="Ücretsiz · iPhone ve iPad">Free · iPhone &amp; iPad</p>
+      <a class="dlbtn" href="https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463">Download on the App Store</a>
+      <p class="note">iPhone &amp; iPad · Yearly plan starts with a 3-day free trial</p>
     </div>
-
-    <!-- Android: no app yet → collect waitlist -->
     <div id="wl" style="display:none">
       <form class="form" id="wlForm" onsubmit="return joinWaitlist(event)">
-        <input type="email" id="email" required placeholder="you@email.com" autocomplete="email" />
-        <button type="submit" id="wlBtn" data-en="Notify me on Android" data-tr="Android'e gelince haber ver">Notify me on Android</button>
+        <input type="email" id="email" required placeholder="you@email.com" autocomplete="email" aria-label="Email" />
+        <button type="submit" id="wlBtn">Notify me on Android</button>
       </form>
       <div class="msg" id="msg"></div>
-      <p class="note" data-en="On iPhone now — Android's coming. Join the list, we'll email you." data-tr="Şu an iPhone'da — Android yolda. Listeye katıl, e-posta atarız.">On iPhone now — Android's coming. Join the list, we'll email you.</p>
+      <p class="note">On iPhone now. Android is coming; join the list and we'll email you.</p>
     </div>
   </div>
 
-  <section class="feat">
-    <h2 data-en="How it works" data-tr="Nasıl çalışır">How it works</h2>
-    <div class="steps">
-      <div class="step"><div class="n">1</div><div><div class="t" data-en="Upload anything" data-tr="Herhangi bir şey yükle">Upload anything</div><div class="d" data-en="A PDF, your slides, or just type a topic." data-tr="Bir PDF, slaytların ya da sadece bir konu yaz.">A PDF, your slides, or just type a topic.</div></div></div>
-      <div class="step"><div class="n">2</div><div><div class="t" data-en="AI makes it a feed" data-tr="Yapay zeka akışa çevirir">AI makes it a feed</div><div class="d" data-en="Short, swipeable cards from your own material." data-tr="Kendi materyalinden kısa, kaydırılabilir kartlar.">Short, swipeable cards from your own material.</div></div></div>
-      <div class="step"><div class="n">3</div><div><div class="t" data-en="Scroll. That's studying now." data-tr="Kaydır. Çalışmak artık bu.">Scroll. That's studying now.</div><div class="d" data-en="Spaced repetition runs in the background. Quizzes are optional." data-tr="Aralıklı tekrar arka planda çalışır. Quizler opsiyonel.">Spaced repetition runs in the background. Quizzes are optional.</div></div></div>
-    </div>
+  <section class="block" id="what">
+    <h2>What is LearnScroll?</h2>
+    <p><strong>LearnScroll is an iPhone app that turns your study material into a feed of short, TikTok-style study videos.</strong> You upload a PDF, lecture slides, a Word doc or a photo of your notes, and AI splits it into key ideas, one short vertical video each. You swipe through them like a For You Page. A quick quiz appears every 10 videos, and spaced repetition brings older videos back right before you would forget them.</p>
+    <p>It is built for people who keep opening TikTok when they meant to study. Instead of asking for more willpower, it points the scrolling habit at your own notes.</p>
   </section>
+
+  <section class="block" id="how">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li class="step"><div class="n">1</div><div><div class="t">Upload anything</div><div class="d">A PDF, PowerPoint (.pptx), Word (.docx) or text file, a photo of your notes, or just a typed topic.</div></div></li>
+      <li class="step"><div class="n">2</div><div><div class="t">AI makes the videos</div><div class="d">Your material becomes short videos with bold captions, one idea each. Usually ready in 1 to 3 minutes; you get a notification.</div></div></li>
+      <li class="step"><div class="n">3</div><div><div class="t">Scroll. That's studying now.</div><div class="d">Quick quiz every 10 videos. Spaced repetition runs in the background, so there's nothing to schedule.</div></div></li>
+    </ol>
+    <p style="margin-top:14px"><a href="/how-to-turn-pdf-into-study-videos/">Step-by-step guide: how to turn a PDF into study videos →</a></p>
+  </section>
+
+  <section class="block" id="uploads">
+    <h2>What can you turn into videos?</h2>
+    <ul>
+      <li>Lecture slides and class notes</li>
+      <li>Textbook chapters, study guides and revision sheets</li>
+      <li>Research papers, articles and reading lists</li>
+      <li>Handwritten notes (take a photo)</li>
+      <li>Any topic you type in, even without a file</li>
+    </ul>
+    <p>Videos are made in English or Turkish, detected from your material.</p>
+  </section>
+
+  <section class="block" id="pricing">
+    <h2>Pricing</h2>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Plan</th><th>Price (US)</th><th>What you get</th></tr></thead>
+      <tbody>
+        <tr><td class="us">Pro yearly</td><td>$29.99 / year<br>3-day free trial for new subscribers</td><td>Up to 12 uploads a month, up to 150 key ideas per upload (deep mode), quizzes, spaced repetition, no ads</td></tr>
+        <tr><td class="us">Pro monthly</td><td>$4.99 / month</td><td>Same as yearly, no trial</td></tr>
+      </tbody>
+    </table></div>
+    <p>There is no free tier: making videos needs Pro. Local App Store prices vary by country. Cancel anytime in your App Store settings. Machine-readable version: <a href="/pricing.md">pricing.md</a>.</p>
+  </section>
+
+  <section class="block" id="who">
+    <h2>Who it's for</h2>
+    <ul>
+      <li><strong>Students who doomscroll instead of studying.</strong> Same gesture, but the feed is your exam material.</li>
+      <li><strong>Exam crammers</strong> with 200 pages and 2 days.</li>
+      <li><strong>People who can't sit with a textbook</strong> but can scroll for hours, including many with ADHD.</li>
+      <li><strong>Adults who want their feed to teach them something:</strong> books, papers, courses, work docs.</li>
+    </ul>
+  </section>
+
+  <section class="block" id="faq">
+    <h2>FAQ</h2>
+    <details open><summary>Is there an app that turns a PDF into TikTok-style study videos?</summary>
+      <p>Yes. LearnScroll is an iPhone app that turns a PDF, lecture slides, a Word doc or a photo of your notes into a feed of short vertical study videos you swipe through like TikTok. Each video covers one idea from your material, a quick quiz appears every 10 videos, and spaced repetition brings older videos back before you forget them.</p></details>
+    <details><summary>What files can I turn into study videos?</summary>
+      <p>PDF, PowerPoint (.pptx), Word (.docx) and plain text files, plus photos of printed or handwritten notes from your camera or photo library. If you have no file, type a topic and LearnScroll builds the feed from that.</p></details>
+    <details><summary>How long does it take to make the videos?</summary>
+      <p>Usually 1 to 3 minutes. Generation runs on the server, so you can leave the app; you get a notification when the feed is ready.</p></details>
+    <details><summary>Is LearnScroll free?</summary>
+      <p>Making videos needs LearnScroll Pro: $4.99 per month or $29.99 per year in the US App Store (local prices vary). The yearly plan starts with a 3-day free trial for new subscribers. There are no ads.</p></details>
+    <details><summary>Is LearnScroll on Android?</summary>
+      <p>Not yet. LearnScroll is on the App Store for iPhone (iOS 16.4 or later) and runs on iPad. Android users can join the waitlist on this page.</p></details>
+    <details><summary>What languages does LearnScroll support?</summary>
+      <p>Videos are made in English or Turkish. By default the language is detected from your material, and you can pick it yourself before creating. The app itself is in English and Turkish.</p></details>
+    <details><summary>How is it different from PDF-to-brainrot video generators?</summary>
+      <p>Brainrot generators usually make one long video with an AI voice reading your text over gameplay footage. LearnScroll splits your material into many short videos, one idea each, in a feed you scroll, and adds quizzes and spaced repetition so you review instead of watching once. <a href="/compare/">See the comparison</a>.</p></details>
+    <details><summary>Is the AI-generated content accurate?</summary>
+      <p>Videos are written from your own material rather than general knowledge, which keeps them close to what you will be tested on. AI can still make mistakes, so treat the feed as review and check key facts against your notes.</p></details>
+    <details><summary>Who makes LearnScroll?</summary>
+      <p>LearnScroll is built by Can Dizdar, an independent developer. It launched on the App Store in July 2026. Questions: <a href="https://candizdar.github.io/learnscroll-legal/support.html">support page</a>.</p></details>
+  </section>
+
+  <div class="cta">
+    <a class="dlbtn" href="https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463">Get LearnScroll</a>
+    <p class="meta">Last updated: 9 October 2026 · App version 1.2.4</p>
+  </div>
 </main>
 
 <footer>
-  <div data-en="No ads. We don't sell your data." data-tr="Reklam yok. Verini satmıyoruz.">No ads. We don't sell your data.</div>
-  <div style="margin-top:8px">© <span id="yr"></span> LearnScroll · <a href="https://candizdar.github.io/learnscroll-legal/privacy.html">Privacy</a> · <a href="https://candizdar.github.io/learnscroll-legal/support.html">Support</a></div>
+  <div>No ads. We don't sell your data.</div>
+  <div class="row"><a href="/how-to-turn-pdf-into-study-videos/">Guide</a> · <a href="/compare/">Compare apps</a> · <a href="/pricing.md">Pricing (text)</a> · <a href="/llms.txt">llms.txt</a> · <a href="/tr/">Türkçe</a></div>
+  <div class="row">© <span id="yr">2026</span> LearnScroll · <a href="https://candizdar.github.io/learnscroll-legal/privacy.html">Privacy</a> · <a href="https://candizdar.github.io/learnscroll-legal/support.html">Support</a></div>
 </footer>
 
 <script>
-  // --- Supabase waitlist (anon insert only; RLS-protected) ---
+  // Turkish browsers land on the Turkish page, once, unless they came from within the site.
+  (function(){
+    try{
+      var langs=(navigator.languages&&navigator.languages.length)?navigator.languages:[navigator.language||"en"];
+      var tr=langs.some(function(l){return (l||"").toLowerCase().indexOf("tr")===0;});
+      var internal=document.referrer&&document.referrer.indexOf(location.host)>-1;
+      if(tr&&!internal&&location.search.indexOf("lang=en")<0){ location.replace("/tr/"+location.search); }
+    }catch(_){}
+  })();
+
   const SB_URL = "https://jalszurarmsrhtqzzjib.supabase.co";
   const SB_KEY = "sb_publishable_3gVavmD6rzUULMf_2IhuQQ_eGzJfJMs";
-
-  const T = {
-    sending:{en:"Sending…",tr:"Gönderiliyor…"},
-    ok:{en:"You're on the list. 🎉 Watch your inbox.",tr:"Listedesin. 🎉 Gelen kutunu kontrol et."},
-    dup:{en:"You're already on the list. 👍",tr:"Zaten listedesin. 👍"},
-    bad:{en:"Enter a valid email.",tr:"Geçerli bir e-posta gir."},
-    err:{en:"Something broke. Try again.",tr:"Bir şeyler ters gitti. Tekrar dene."}
-  };
-  // Cihaz diline göre aç: tercih listesinde Türkçe varsa TR, yoksa EN
-  const _navLangs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || "en"];
-  let LANG = _navLangs.some(l => (l||"").toLowerCase().startsWith("tr")) ? "tr" : "en";
-
-  function setLang(l){
-    LANG=l;
-    document.getElementById("b-en").classList.toggle("on",l==="en");
-    document.getElementById("b-tr").classList.toggle("on",l==="tr");
-    document.documentElement.lang=l;
-    document.querySelectorAll("[data-"+l+"]").forEach(el=>{ el.innerHTML = el.getAttribute("data-"+l); });
-    startCarousel();
-  }
-
   async function joinWaitlist(e){
     e.preventDefault();
     const email=document.getElementById("email").value.trim();
-    const msg=document.getElementById("msg");
-    const btn=document.getElementById("wlBtn");
-    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ msg.className="msg err"; msg.textContent=T.bad[LANG]; return false; }
-    btn.disabled=true; msg.className="msg"; msg.textContent=T.sending[LANG];
+    const msg=document.getElementById("msg"), btn=document.getElementById("wlBtn");
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ msg.className="msg err"; msg.textContent="Enter a valid email."; return false; }
+    btn.disabled=true; msg.className="msg"; msg.textContent="Sending…";
     try{
-      const res=await fetch(SB_URL+"/rest/v1/waitlist",{
-        method:"POST",
-        headers:{ "apikey":SB_KEY, "Authorization":"Bearer "+SB_KEY, "Content-Type":"application/json", "Prefer":"return=minimal" },
-        body:JSON.stringify({ email, source:"landing", locale:LANG, platform:(/iphone|ipad/i.test(navigator.userAgent)?"ios":"web"), referrer:document.referrer||null })
-      });
-      if(res.ok){ msg.className="msg ok"; msg.textContent=T.ok[LANG]; document.getElementById("wlForm").reset(); }
-      else if(res.status===409){ msg.className="msg ok"; msg.textContent=T.dup[LANG]; }
-      else { msg.className="msg err"; msg.textContent=T.err[LANG]; }
-    }catch(_){ msg.className="msg err"; msg.textContent=T.err[LANG]; }
+      const res=await fetch(SB_URL+"/rest/v1/waitlist",{method:"POST",
+        headers:{"apikey":SB_KEY,"Authorization":"Bearer "+SB_KEY,"Content-Type":"application/json","Prefer":"return=minimal"},
+        body:JSON.stringify({email,source:"landing",locale:"en",platform:"android",referrer:document.referrer||null})});
+      if(res.ok){ msg.className="msg ok"; msg.textContent="You're on the list. Watch your inbox."; document.getElementById("wlForm").reset(); }
+      else if(res.status===409){ msg.className="msg ok"; msg.textContent="You're already on the list."; }
+      else { msg.className="msg err"; msg.textContent="Something broke. Try again."; }
+    }catch(_){ msg.className="msg err"; msg.textContent="Something broke. Try again."; }
     btn.disabled=false; return false;
   }
-
+  if(/Android/i.test(navigator.userAgent||"")){
+    document.getElementById("dl").style.display="none";
+    document.getElementById("wl").style.display="block";
+    document.getElementById("eyebrow").textContent="Coming soon to Android";
+  }
   document.getElementById("yr").textContent=new Date().getFullYear();
 
-  // --- real screenshot carousel (language-aware, two-layer crossfade) ---
-  let _carTimer=null, _front=null, _back=null;
-  function startCarousel(){
-    const SHOT_SETS={
-      en:["shots/shot1.jpg","shots/shot2.jpg","shots/shot3.jpg","shots/shot4.jpg","shots/shot5.jpg","shots/shot6.jpg"],
-      tr:["shots-tr/tr1.jpg","shots-tr/tr2.jpg","shots-tr/tr3.jpg","shots-tr/tr4.jpg","shots-tr/tr5.jpg","shots-tr/tr6.jpg","shots-tr/tr7.jpg"]
-    };
-    const A=document.getElementById("layerA"), B=document.getElementById("layerB"), dotsBox=document.getElementById("dots");
-    const set=SHOT_SETS[LANG]||SHOT_SETS.en;
-    if(_carTimer){ clearInterval(_carTimer); _carTimer=null; }
-    set.forEach(s=>{ const im=new Image(); im.src=s; }); // preload
-    A.src=set[0]; A.classList.add("on"); B.classList.remove("on");
-    _front=A; _back=B;
-    dotsBox.innerHTML="";
-    set.forEach((_,k)=>{ const d=document.createElement("i"); if(k===0)d.classList.add("on"); dotsBox.appendChild(d); });
-    const dots=[...dotsBox.children];
-    let i=0;
-    _carTimer=setInterval(()=>{
-      i=(i+1)%set.length;
-      _back.src=set[i];
-      _back.classList.add("on"); _front.classList.remove("on");
-      const t=_front; _front=_back; _back=t;
-      dots.forEach((d,k)=>d.classList.toggle("on",k===i));
-    },2800);
-  }
-
-  // Platform-aware CTA: iOS & desktop → App Store button; Android → waitlist.
-  // Runs BEFORE setLang so the eyebrow shows the right (translated) copy.
   (function(){
-    if(/Android/i.test(navigator.userAgent || "")){
-      document.getElementById("dl").style.display="none";
-      document.getElementById("wl").style.display="block";
-      var eb=document.getElementById("eyebrow");
-      eb.setAttribute("data-en","Coming soon to Android");
-      eb.setAttribute("data-tr","Android'e yakında geliyor");
-    }
+    const set=["shots/shot1.jpg","shots/shot2.jpg","shots/shot3.jpg","shots/shot4.jpg","shots/shot5.jpg","shots/shot6.jpg"];
+    const dotsBox=document.getElementById("dots");
+    let front=document.getElementById("layerA"), back=document.getElementById("layerB"), i=0;
+    set.forEach((s,k)=>{ const im=new Image(); im.src=s; const d=document.createElement("i"); if(k===0)d.classList.add("on"); dotsBox.appendChild(d); });
+    const dots=[...dotsBox.children];
+    setInterval(()=>{
+      i=(i+1)%set.length; back.src=set[i]; back.classList.add("on"); front.classList.remove("on");
+      const t=front; front=back; back=t; dots.forEach((d,k)=>d.classList.toggle("on",k===i));
+    },2800);
   })();
-
-  setLang(LANG); // init language + carousel
 </script>
 </body>
 </html>

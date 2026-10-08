@@ -1,0 +1,393 @@
+# LearnScroll
+
+> LearnScroll (App Store name "LearnScroll: Study Shorts") is an iPhone app that turns a PDF, lecture slides, a Word doc, a photo of notes or a typed topic into a feed of short TikTok-style study videos. Quick quizzes appear every 10 videos and spaced repetition brings older videos back. Videos are in English or Turkish. Pro subscription: $4.99/month or $29.99/year (3-day free trial on yearly). No ads.
+
+Key facts:
+- Platform: iOS 16.4 or later (iPhone; runs on iPad). No Android app yet (waitlist on the website).
+- App Store: https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463 (app id 6774384463)
+- Inputs: PDF, PowerPoint (.pptx), Word (.docx), plain text, photos of printed or handwritten notes, or a typed topic.
+- Output: a vertical swipe feed of short captioned videos, one key idea each, made from the user's own material; ready in about 1 to 3 minutes.
+- Learning features: multiple-choice quiz every 10 videos (at most once every 2 minutes), SM-2 style spaced repetition, up to 150 key ideas per upload in deep mode, 12 uploads per month on Pro.
+- Who it is for: students who doomscroll instead of studying, exam crammers, people who struggle to read textbooks but can scroll for hours, adults who want a feed that teaches.
+- Not to be confused with "Scrollie" (an Android language app whose package name contains "learnscroll").
+- Developer: Can Dizdar (independent). Launched July 2026.
+
+## Pages
+- [Home](https://learnscroll.app/): what LearnScroll is, how it works, pricing, FAQ
+- [How to turn a PDF into TikTok-style study videos](https://learnscroll.app/how-to-turn-pdf-into-study-videos/): step-by-step guide and tips
+- [Compare PDF-to-video study apps](https://learnscroll.app/compare/): LearnScroll next to other apps that turn notes into short videos
+- [Türkçe](https://learnscroll.app/tr/): Turkish page (YKS, university exams)
+
+## Machine-readable
+- [Pricing](https://learnscroll.app/pricing.md): plans and prices by country
+- [Full text](https://learnscroll.app/llms-full.txt): everything above in one file
+
+## Optional
+- [Privacy policy](https://candizdar.github.io/learnscroll-legal/privacy.html)
+- [Support](https://candizdar.github.io/learnscroll-legal/support.html)
+
+---
+
+<!-- Source: https://learnscroll.app/ -->
+
+iPhone app · on the App Store
+
+# Turn any PDF into TikTok-style study videos.
+
+You were going to study. You ended up on TikTok. LearnScroll turns your notes, slides and PDFs into a feed you can't stop scrolling, except everything in it is on your exam.
+
+[Download on the App Store](https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463)
+
+iPhone & iPad · Yearly plan starts with a 3-day free trial
+
+## What is LearnScroll?
+
+**LearnScroll is an iPhone app that turns your study material into a feed of short, TikTok-style study videos.** You upload a PDF, lecture slides, a Word doc or a photo of your notes, and AI splits it into key ideas, one short vertical video each. You swipe through them like a For You Page. A quick quiz appears every 10 videos, and spaced repetition brings older videos back right before you would forget them.
+
+It is built for people who keep opening TikTok when they meant to study. Instead of asking for more willpower, it points the scrolling habit at your own notes.
+
+## How it works
+
+1. **Upload anything** A PDF, PowerPoint (.pptx), Word (.docx) or text file, a photo of your notes, or just a typed topic.
+
+2. **AI makes the videos** Your material becomes short videos with bold captions, one idea each. Usually ready in 1 to 3 minutes; you get a notification.
+
+3. **Scroll. That's studying now.** Quick quiz every 10 videos. Spaced repetition runs in the background, so there's nothing to schedule.
+
+[Step-by-step guide: how to turn a PDF into study videos →](https://learnscroll.app/how-to-turn-pdf-into-study-videos/)
+
+## What can you turn into videos?
+
+- Lecture slides and class notes
+
+- Textbook chapters, study guides and revision sheets
+
+- Research papers, articles and reading lists
+
+- Handwritten notes (take a photo)
+
+- Any topic you type in, even without a file
+
+Videos are made in English or Turkish, detected from your material.
+
+## Pricing
+
+| Plan | Price (US) | What you get |
+|---|---|---|
+| Pro yearly | $29.99 / year · 3-day free trial for new subscribers | Up to 12 uploads a month, up to 150 key ideas per upload (deep mode), quizzes, spaced repetition, no ads |
+| Pro monthly | $4.99 / month | Same as yearly, no trial |
+
+There is no free tier: making videos needs Pro. Local App Store prices vary by country. Cancel anytime in your App Store settings. Machine-readable version: [pricing.md](https://learnscroll.app/pricing.md).
+
+## Who it's for
+
+- **Students who doomscroll instead of studying.** Same gesture, but the feed is your exam material.
+
+- **Exam crammers** with 200 pages and 2 days.
+
+- **People who can't sit with a textbook** but can scroll for hours, including many with ADHD.
+
+- **Adults who want their feed to teach them something:** books, papers, courses, work docs.
+
+## FAQ
+
+**Q: Is there an app that turns a PDF into TikTok-style study videos?**
+
+Yes. LearnScroll is an iPhone app that turns a PDF, lecture slides, a Word doc or a photo of your notes into a feed of short vertical study videos you swipe through like TikTok. Each video covers one idea from your material, a quick quiz appears every 10 videos, and spaced repetition brings older videos back before you forget them.
+
+**Q: What files can I turn into study videos?**
+
+PDF, PowerPoint (.pptx), Word (.docx) and plain text files, plus photos of printed or handwritten notes from your camera or photo library. If you have no file, type a topic and LearnScroll builds the feed from that.
+
+**Q: How long does it take to make the videos?**
+
+Usually 1 to 3 minutes. Generation runs on the server, so you can leave the app; you get a notification when the feed is ready.
+
+**Q: Is LearnScroll free?**
+
+Making videos needs LearnScroll Pro: $4.99 per month or $29.99 per year in the US App Store (local prices vary). The yearly plan starts with a 3-day free trial for new subscribers. There are no ads.
+
+**Q: Is LearnScroll on Android?**
+
+Not yet. LearnScroll is on the App Store for iPhone (iOS 16.4 or later) and runs on iPad. Android users can join the waitlist on this page.
+
+**Q: What languages does LearnScroll support?**
+
+Videos are made in English or Turkish. By default the language is detected from your material, and you can pick it yourself before creating. The app itself is in English and Turkish.
+
+**Q: How is it different from PDF-to-brainrot video generators?**
+
+Brainrot generators usually make one long video with an AI voice reading your text over gameplay footage. LearnScroll splits your material into many short videos, one idea each, in a feed you scroll, and adds quizzes and spaced repetition so you review instead of watching once. [See the comparison](https://learnscroll.app/compare/).
+
+**Q: Is the AI-generated content accurate?**
+
+Videos are written from your own material rather than general knowledge, which keeps them close to what you will be tested on. AI can still make mistakes, so treat the feed as review and check key facts against your notes.
+
+**Q: Who makes LearnScroll?**
+
+LearnScroll is built by Can Dizdar, an independent developer. It launched on the App Store in July 2026. Questions: [support page](https://candizdar.github.io/learnscroll-legal/support.html).
+
+[Get LearnScroll](https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463)
+
+Last updated: 9 October 2026 · App version 1.2.4
+
+
+---
+
+<!-- Source: https://learnscroll.app/how-to-turn-pdf-into-study-videos/ -->
+
+Guide
+
+# How to turn a PDF into TikTok-style study videos
+
+**Short answer:** install LearnScroll on your iPhone, tap +, add the PDF (or slides, a Word doc, a photo of your notes), tap Create, and in 1 to 3 minutes you get a feed of short vertical videos, one key idea each, that you swipe through like TikTok. A quiz appears every 10 videos and spaced repetition brings older ones back.
+
+## What you need
+
+- An iPhone or iPad on iOS 16.4 or later
+
+- [LearnScroll](https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463) with a Pro subscription ($4.99/month, or $29.99/year with a 3-day free trial for new subscribers, US prices)
+
+- Your material: a PDF, PowerPoint (.pptx), Word (.docx) or text file, a photo of notes, or just a topic
+
+## Step by step
+
+### 1. Install LearnScroll
+
+Download *LearnScroll: Study Shorts* from the App Store. The intro asks a few questions (what you study, your goal) and ends on the upload screen.
+
+### 2. Add your material
+
+Tap + and pick a file from Files, choose a photo from your library, or take a photo of a page with the camera. No file? Tap *No file? Type a topic* and write what you want to learn, for example "Krebs cycle" or "causes of World War I".
+
+### 3. Choose the language
+
+Leave it on *auto* and LearnScroll detects English or Turkish from your material, or choose one yourself.
+
+### 4. Tap Create
+
+AI reads the material, splits it into key ideas and writes one short video per idea: bold captions over a looping clip, about the length of a TikTok. It usually takes 1 to 3 minutes. You can leave the app; a notification tells you when the feed is ready.
+
+### 5. Scroll, then answer the quiz
+
+Swipe up through the feed. Every 10 videos (at most once every 2 minutes) a quick multiple-choice quiz checks what stuck. Videos you have seen come back later through spaced repetition, so review happens without planning it.
+
+## Tips for better study videos
+
+- **Long textbook? Upload one chapter at a time.** Each upload covers up to 150 key ideas in deep mode, and Pro includes 12 uploads a month, so a chapter per upload keeps every feed focused on one exam topic.
+
+- **Lecture slides work well.** Slides already break a topic into ideas, so the videos map closely to what your teacher covered.
+
+- **Handwritten notes:** take a clear, well-lit photo of each page.
+
+- **Before an exam,** scroll the feed in short sessions over several days rather than once. That is what the spaced repetition is built for.
+
+- **Check key facts** against your notes. Videos are made from your material, but AI can still make mistakes.
+
+## Other ways to turn a PDF into videos
+
+LearnScroll is one approach: a feed of many short videos plus quizzes and spaced repetition, on iPhone. Other tools take different routes:
+
+- **PDF-to-brainrot generators** make one video where an AI voice reads your text over gameplay footage. Good for a single fun pass, with no review system.
+
+- **Narrated slide summaries** from AI notebook tools turn a document into a longer explainer video, closer to a lecture than a feed.
+
+- **Flashcard apps** turn PDFs into cards rather than videos.
+
+Feature by feature: [LearnScroll compared with other PDF-to-video study apps](https://learnscroll.app/compare/).
+
+[Get LearnScroll on the App Store](https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463)
+
+By Can Dizdar, developer of LearnScroll · Published 9 October 2026 · Last updated 9 October 2026
+
+
+---
+
+<!-- Source: https://learnscroll.app/compare/ -->
+
+Comparison · checked 9 Oct 2026
+
+# Apps that turn PDFs and notes into TikTok-style study videos
+
+**Short answer:** on iPhone, the apps that make short study videos from your own PDF are LearnScroll, Brainjuice and Braintok. LearnScroll and Brainjuice build a scrollable feed with quizzes and spaced repetition; Braintok makes meme-style videos with an AI voice over gameplay. Recess and Scrollar take a different route: they lock your social apps until you study, and make no videos.
+
+## Disclosure and method
+
+This page is written by the developer of LearnScroll, so read it with that in mind. To keep it fair, every fact about other apps comes from their own App Store listing, Apple's public lookup API or their website, checked on 9 October 2026. Prices are US prices as stated by the developer; where a developer states none, we quote the App Store in-app purchase list. Nothing here rates other apps as good or bad; if something is wrong or out of date, tell us via the [support page](https://candizdar.github.io/learnscroll-legal/support.html) and we will fix it.
+
+## At a glance
+
+| App | Makes videos from your files | Format | Quiz / spaced repetition | Platforms | Price (US) |
+|---|---|---|---|---|---|
+| LearnScroll | Yes: PDF, PPTX, DOCX, TXT, photos, topic | Feed of short captioned videos, one idea each | Quiz every 10 videos; spaced repetition | iPhone, iPad | $4.99/mo or $29.99/yr (3-day trial on yearly). No free tier |
+| Brainjuice | Yes: PDFs, YouTube, photos, topic | Short-video feed, summaries, AI chat | Quizzes; spaced repetition (stated) | iPhone, iPad | In-app plans from $2.99/week; Pro $9.99/mo or $79.99/yr listed |
+| Braintok | Yes: text, notes, PDFs, topic | Meme-style video, AI voice over Minecraft / Subway Surfers | None mentioned | iPhone, iPad | Weekly or monthly subscription ($2.99 to $19.99 listed) |
+| PDF Brainrot (iOS) | Yes: PDFs | Brainrot-style video | None mentioned | iPhone, iPad | 3 videos/week free; Pro $4.99/week |
+| ScreenApp PDF to Brainrot | Yes: PDFs | One narrated vertical video | No | Web | 3 free uploads, then paid plan |
+| Recess | No (flashcards) | Flashcards and quizzes shown before social apps open | Quiz; FSRS spaced repetition | iPhone, web | $12.99/mo or $39.99/yr (7-day trial). No free tier |
+| Scrollar | No | Answer questions to unlock blocked apps | Quiz; spaced review | iPhone | Free tier; Premium monthly or annual |
+| Knowt | No video | Flashcards, notes, practice tests | Quiz; spaced repetition | iOS, Android, web | Free; Ultra $24.99/mo or $149.99/yr |
+| Quizlet | No video | Flashcards, study guides, practice tests | Quiz; spaced repetition | iOS, Android, web | Free; Quizlet Plus subscription |
+
+Sources: App Store listings and Apple's iTunes lookup API (US), developer websites (studyrecess.com, knowt.com/plans, screenapp.io), all checked 9 October 2026.
+
+## Notescast and StudySwipe alternatives
+
+Two apps that often come up for "PDF to TikTok study videos" are no longer on the App Store. On 9 October 2026 the US pages of **Notescast - PDF to Brainrot** (id 6737321593) and **StudySwipe - AI Learning** (id 6739216586) returned 404, and Apple's lookup API returned no results for either in 12 countries. Older listings and directory pages are still indexed, which is why they keep being recommended.
+
+If you were looking for either one, the apps in the table above that still make short videos from your own PDFs on iPhone are LearnScroll, Brainjuice and Braintok.
+
+## App by app
+
+### LearnScroll
+
+Turns a PDF, slides, Word doc, photo of notes or a typed topic into a feed of short vertical videos with bold captions, one key idea each, in English or Turkish. A multiple-choice quiz appears every 10 videos and spaced repetition brings older videos back. Ready in about 1 to 3 minutes. Subscription only, no free tier, no ads. **Choose it if** you want to replace your TikTok time with a feed made from your exam material. [More about LearnScroll](https://learnscroll.app/).
+
+### Brainjuice: Scroll to Study
+
+The closest app to LearnScroll. It turns PDFs, YouTube videos, photos or a topic into a feed of short videos, with quizzes, summaries, an AI chat about your material and cited sources. Version 1.0.23 (8 September 2026), 4.0 stars from 8 US ratings. **Choose it if** you also want YouTube input and a chat with your material.
+
+### Brainrot Study Video: Braintok
+
+Makes meme-heavy vertical videos where a selectable AI voice reads your material over gameplay footage such as Minecraft or Subway Surfers. No quizzes or spaced repetition mentioned. Last updated 22 February 2025, 3.3 stars from 17 US ratings. **Choose it if** you want a funny one-off video of a topic.
+
+### PDF to Brainrot (web tools and iOS app)
+
+"PDF to Brainrot" is a format more than one product. ScreenApp's web tool turns a PDF into one narrated vertical video (3 free uploads). pdftobrainrot.org is a free web tool. The iOS app *PDF Brainrot* (id 6738877998) was last updated in February 2025. **Choose these if** you want a single video on a laptop without installing anything.
+
+### Recess: Study, Then Scroll
+
+Not a video app. Recess shows your flashcards and quizzes before TikTok or Instagram opens, scheduled with FSRS spaced repetition. $12.99/month or $39.99/year with a 7-day trial; no free tier. 4.8 stars from 23 US ratings. **Choose it if** you want a gate in front of social apps rather than a replacement feed. LearnScroll and Recess work well together.
+
+### Scrollar: Study to Unlock
+
+Also a gate: it blocks chosen apps until you answer study questions, with spaced review. Has a free tier (one app, one question every 5 minutes). **Choose it if** you want a free study gate.
+
+### Knowt and Quizlet
+
+The big flashcard platforms. Both turn notes and PDFs into flashcards, practice tests and study guides, on iOS, Android and web, with free tiers. Neither makes short videos. **Choose them if** you want classic active recall, Android, or a free option.
+
+## FAQ
+
+**Q: Which app turns a PDF into TikTok-style study videos?**
+
+On iPhone: LearnScroll, Brainjuice and Braintok make short study videos from your own PDF. LearnScroll and Brainjuice build a feed with quizzes; Braintok makes meme-style narrated videos. On the web, ScreenApp's PDF to Brainrot makes a single narrated video.
+
+**Q: Is Notescast still available?**
+
+Not on the App Store as of 9 October 2026: its US page returns 404 and Apple's lookup finds it in none of 12 countries checked. The same is true for StudySwipe.
+
+**Q: Is there a free app that turns PDFs into study videos?**
+
+Fully free options are web tools such as pdftobrainrot.org or ScreenApp's 3 free uploads. PDF Brainrot on iOS allows 3 videos a week for free. LearnScroll has no free tier but its yearly plan starts with a 3-day free trial.
+
+**Q: What about Android?**
+
+Of the video apps above, only the web tools work on Android today. Knowt and Quizlet have Android apps but make flashcards, not videos. LearnScroll has an Android waitlist on its homepage.
+
+[Try LearnScroll](https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463)
+
+By Can Dizdar, developer of LearnScroll · Published 9 October 2026 · Last checked 9 October 2026
+
+
+---
+
+# Pricing: LearnScroll
+
+Last updated: 2026-10-09. Prices are set by the App Store and vary by country.
+
+LearnScroll is an iPhone app (iOS 16.4+, also runs on iPad) that turns PDFs, slides, Word docs, photos of notes or a typed topic into a feed of short TikTok-style study videos. Making videos requires LearnScroll Pro. There is no free tier and there are no ads.
+
+## LearnScroll Pro (yearly)
+- Price: $29.99/year (US) · £29.99 (UK) · €34.99 (Germany, France) · 1.499,99 TL (Turkey)
+- Free trial: 3 days for new subscribers, then the yearly price
+- Includes: up to 12 uploads per month, up to 150 key ideas per upload (deep mode), quiz every 10 videos, spaced repetition, videos in English or Turkish, no ads
+
+## LearnScroll Pro (monthly)
+- Price: $4.99/month (US) · £4.99 (UK) · €5.99 (Germany, France) · 249,99 TL (Turkey)
+- Free trial: none
+- Includes: same as yearly
+
+## Billing
+- Auto-renewing App Store subscription; cancel anytime in App Store account settings, at least 24 hours before renewal.
+- Download: https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463
+
+---
+
+<!-- Source: https://learnscroll.app/tr/ -->
+
+iPhone uygulaması · App Store'da
+
+# PDF'ini TikTok tarzı ders videolarına çevir.
+
+Ders çalışacaktın, TikTok'ta uyandın. LearnScroll notlarını, slaytlarını ve PDF'lerini durmadan kaydırdığın bir akışa çevirir. Bu sefer kaydırdığın her şey sınavında çıkacak.
+
+[App Store'dan indir](https://apps.apple.com/tr/app/id6774384463)
+
+iPhone ve iPad · Yıllık plan 3 gün ücretsiz denemeyle başlar
+
+## LearnScroll nedir?
+
+**LearnScroll, çalışma materyalini TikTok tarzı kısa ders videolarından oluşan bir akışa çeviren iPhone uygulamasıdır.** PDF, ders slaytı, Word dosyası ya da not fotoğrafı yüklersin; yapay zeka materyali ana fikirlerine ayırır ve her fikir için kısa, dikey bir video hazırlar. Keşfet sayfası gibi kaydırırsın. Her 10 videoda bir kısa quiz çıkar, aralıklı tekrar eski videoları unutmadan hemen önce geri getirir.
+
+## Nasıl çalışır
+
+1. **Yükle** PDF, PowerPoint (.pptx), Word (.docx) ya da metin dosyası, notlarının fotoğrafı veya sadece bir konu.
+
+2. **Yapay zeka videoya çevirir** Her fikir için kalın altyazılı kısa bir video. Genelde 1-3 dakikada hazır, bildirim gelir.
+
+3. **Kaydır. Çalışmak artık bu.** Her 10 videoda bir kısa quiz. Aralıklı tekrar arka planda çalışır, plan yapmana gerek yok.
+
+## Neleri videoya çevirebilirsin?
+
+- YKS / AYT konu anlatımı PDF'leri ve ders notları
+
+- Üniversite ders slaytları, vize ve final notları
+
+- Kitap bölümleri, makaleler, okuma listeleri
+
+- El yazısı notlar (fotoğrafını çek)
+
+- Dosyan yoksa yazdığın herhangi bir konu
+
+Videolar Türkçe ya da İngilizce üretilir; dil materyalinden otomatik algılanır.
+
+## Fiyat
+
+| Plan | Fiyat (Türkiye) | Neler var |
+|---|---|---|
+| Pro yıllık | 1.499,99 TL / yıl · Yeni abonelere 3 gün ücretsiz | Ayda 12 yükleme, yükleme başına 150 ana fikre kadar (derin mod), quiz, aralıklı tekrar, reklam yok |
+| Pro aylık | 249,99 TL / ay | Yıllıkla aynı, deneme yok |
+
+Ücretsiz katman yok, video üretmek için Pro gerekir. App Store ayarlarından istediğin zaman iptal edebilirsin.
+
+## Sık sorulanlar
+
+**Q: PDF'i TikTok gibi ders videosuna çeviren uygulama var mı?**
+
+Evet. LearnScroll, PDF, ders slaytı, Word dosyası ya da not fotoğrafını TikTok tarzı kısa dikey ders videolarına çeviren bir iPhone uygulaması. Her video materyalindeki tek bir fikri anlatır, her 10 videoda bir kısa quiz çıkar, aralıklı tekrar eski videoları unutmadan önce geri getirir.
+
+**Q: Hangi dosyaları yükleyebilirim?**
+
+PDF, PowerPoint (.pptx), Word (.docx) ve metin dosyaları; kameradan ya da galeriden basılı veya el yazısı not fotoğrafları. Dosyan yoksa bir konu yazman yeterli.
+
+**Q: LearnScroll ücretsiz mi?**
+
+Video üretmek için LearnScroll Pro gerekir: aylık 249,99 TL veya yıllık 1.499,99 TL. Yıllık plan yeni abonelere 3 gün ücretsiz denemeyle başlar. Reklam yok.
+
+**Q: YKS'ye hazırlanırken kullanılır mı?**
+
+Evet. Konu anlatımı PDF'lerini, ders notlarını ya da kitap bölümlerini yükleyip Türkçe video akışına çevirebilirsin. Sözel konular ve ezber gerektiren bilgiler için en iyi sonucu verir.
+
+**Q: Yapay zekanın ürettiği bilgi doğru mu?**
+
+Videolar genel bilgiden değil senin materyalinden yazılır, bu yüzden sınavda çıkacak olana yakın kalır. Yine de yapay zeka hata yapabilir; önemli bilgileri notlarınla karşılaştır.
+
+**Q: Android'de var mı?**
+
+Henüz yok. LearnScroll iPhone (iOS 16.4 ve üstü) için App Store'da, iPad'de de çalışır.
+
+[LearnScroll'u indir](https://apps.apple.com/tr/app/id6774384463)
+
+Son güncelleme: 9 Ekim 2026 · Geliştirici: Can Dizdar
+

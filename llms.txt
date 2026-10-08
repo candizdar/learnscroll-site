@@ -1,0 +1,27 @@
+# LearnScroll
+
+> LearnScroll (App Store name "LearnScroll: Study Shorts") is an iPhone app that turns a PDF, lecture slides, a Word doc, a photo of notes or a typed topic into a feed of short TikTok-style study videos. Quick quizzes appear every 10 videos and spaced repetition brings older videos back. Videos are in English or Turkish. Pro subscription: $4.99/month or $29.99/year (3-day free trial on yearly). No ads.
+
+Key facts:
+- Platform: iOS 16.4 or later (iPhone; runs on iPad). No Android app yet (waitlist on the website).
+- App Store: https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463 (app id 6774384463)
+- Inputs: PDF, PowerPoint (.pptx), Word (.docx), plain text, photos of printed or handwritten notes, or a typed topic.
+- Output: a vertical swipe feed of short captioned videos, one key idea each, made from the user's own material; ready in about 1 to 3 minutes.
+- Learning features: multiple-choice quiz every 10 videos (at most once every 2 minutes), SM-2 style spaced repetition, up to 150 key ideas per upload in deep mode, 12 uploads per month on Pro.
+- Who it is for: students who doomscroll instead of studying, exam crammers, people who struggle to read textbooks but can scroll for hours, adults who want a feed that teaches.
+- Not to be confused with "Scrollie" (an Android language app whose package name contains "learnscroll").
+- Developer: Can Dizdar (independent). Launched July 2026.
+
+## Pages
+- [Home](https://learnscroll.app/): what LearnScroll is, how it works, pricing, FAQ
+- [How to turn a PDF into TikTok-style study videos](https://learnscroll.app/how-to-turn-pdf-into-study-videos/): step-by-step guide and tips
+- [Compare PDF-to-video study apps](https://learnscroll.app/compare/): LearnScroll next to other apps that turn notes into short videos
+- [Türkçe](https://learnscroll.app/tr/): Turkish page (YKS, university exams)
+
+## Machine-readable
+- [Pricing](https://learnscroll.app/pricing.md): plans and prices by country
+- [Full text](https://learnscroll.app/llms-full.txt): everything above in one file
+
+## Optional
+- [Privacy policy](https://candizdar.github.io/learnscroll-legal/privacy.html)
+- [Support](https://candizdar.github.io/learnscroll-legal/support.html)
