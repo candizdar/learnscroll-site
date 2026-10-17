@@ -1,6 +1,6 @@
 # LearnScroll
 
-> LearnScroll (App Store name "LearnScroll: Study Shorts") is an iPhone app that turns a PDF, lecture slides, a Word doc, a photo of notes or a typed topic into a feed of short TikTok-style study videos. Quick quizzes appear every 10 videos and spaced repetition brings older videos back. Videos are in English or Turkish. Pro subscription: $4.99/month or $29.99/year (3-day free trial on yearly). No ads.
+> LearnScroll (App Store name "LearnScroll: Study Shorts") is an iPhone app that turns a PDF, lecture slides, a Word doc, a photo of notes or a typed topic into a feed of short TikTok-style study videos. Quick quizzes appear every 10 videos and spaced repetition brings older videos back. Videos are in English or Turkish. Pro subscription: $4.99/month or $29.99/year. No ads.
 
 Key facts:
 - Platform: iOS 16.4 or later (iPhone; runs on iPad). No Android app yet (waitlist on the website).
