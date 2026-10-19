@@ -77,7 +77,7 @@ Videos are made in English or Turkish, detected from your material.
 | Pro yearly | $29.99 / year | Up to 12 uploads a month, up to 150 key ideas per upload (deep mode), quizzes, spaced repetition, no ads |
 | Pro monthly | $4.99 / month | Same as yearly |
 
-There is no free tier: making videos needs Pro. Local App Store prices vary by country. Cancel anytime in your App Store settings. Machine-readable version: [pricing.md](https://learnscroll.app/pricing.md).
+Your first upload is free: 6 cards from your own notes, no account needed. Turning the rest of your material into videos needs Pro. Local App Store prices vary by country. Cancel anytime in your App Store settings. Machine-readable version: [pricing.md](https://learnscroll.app/pricing.md).
 
 ## Who it's for
 
@@ -219,7 +219,7 @@ This page is written by the developer of LearnScroll, so read it with that in mi
 
 | App | Makes videos from your files | Format | Quiz / spaced repetition | Platforms | Price (US) |
 |---|---|---|---|---|---|
-| LearnScroll | Yes: PDF, PPTX, DOCX, TXT, photos, topic | Feed of short captioned videos, one idea each | Quiz every 10 videos; spaced repetition | iPhone, iPad | $4.99/mo or $29.99/yr. No free tier |
+| LearnScroll | Yes: PDF, PPTX, DOCX, TXT, photos, topic | Feed of short captioned videos, one idea each | Quiz every 10 videos; spaced repetition | iPhone, iPad | $4.99/mo or $29.99/yr. First upload free (6 cards) |
 | Brainjuice | Yes: PDFs, YouTube, photos, topic | Short-video feed, summaries, AI chat | Quizzes; spaced repetition (stated) | iPhone, iPad | In-app plans from $2.99/week; Pro $9.99/mo or $79.99/yr listed |
 | Braintok | Yes: text, notes, PDFs, topic | Meme-style video, AI voice over Minecraft / Subway Surfers | None mentioned | iPhone, iPad | Weekly or monthly subscription ($2.99 to $19.99 listed) |
 | PDF Brainrot (iOS) | Yes: PDFs | Brainrot-style video | None mentioned | iPhone, iPad | 3 videos/week free; Pro $4.99/week |
@@ -241,7 +241,7 @@ If you were looking for either one, the apps in the table above that still make 
 
 ### LearnScroll
 
-Turns a PDF, slides, Word doc, photo of notes or a typed topic into a feed of short vertical videos with bold captions, one key idea each, in English or Turkish. A multiple-choice quiz appears every 10 videos and spaced repetition brings older videos back. Ready in about 1 to 3 minutes. Subscription only, no free tier, no ads. **Choose it if** you want to replace your TikTok time with a feed made from your exam material. [More about LearnScroll](https://learnscroll.app/).
+Turns a PDF, slides, Word doc, photo of notes or a typed topic into a feed of short vertical videos with bold captions, one key idea each, in English or Turkish. A multiple-choice quiz appears every 10 videos and spaced repetition brings older videos back. Ready in about 1 to 3 minutes. First upload free (6 cards), then subscription; no ads. **Choose it if** you want to replace your TikTok time with a feed made from your exam material. [More about LearnScroll](https://learnscroll.app/).
 
 ### Brainjuice: Scroll to Study
 
@@ -279,7 +279,7 @@ Not on the App Store as of 9 October 2026: its US page returns 404 and Apple's l
 
 **Q: Is there a free app that turns PDFs into study videos?**
 
-Fully free options are web tools such as pdftobrainrot.org or ScreenApp's 3 free uploads. PDF Brainrot on iOS allows 3 videos a week for free. LearnScroll has no free tier.
+Fully free options are web tools such as pdftobrainrot.org or ScreenApp's 3 free uploads. PDF Brainrot on iOS allows 3 videos a week for free. LearnScroll makes your first upload free (6 cards).
 
 **Q: What about Android?**
 
@@ -294,9 +294,9 @@ By Can Dizdar, developer of LearnScroll · Published 9 October 2026 · Last chec
 
 # Pricing: LearnScroll
 
-Last updated: 2026-10-17. Prices are set by the App Store and vary by country.
+Last updated: 2026-10-19. Prices are set by the App Store and vary by country.
 
-LearnScroll is an iPhone app (iOS 16.4+, also runs on iPad) that turns PDFs, slides, Word docs, photos of notes or a typed topic into a feed of short TikTok-style study videos. Making videos requires LearnScroll Pro. There is no free tier and there are no ads.
+LearnScroll is an iPhone app (iOS 16.4+, also runs on iPad) that turns PDFs, slides, Word docs, photos of notes or a typed topic into a feed of short TikTok-style study videos. The first upload is free (6 cards from your own notes); turning the rest of your material into videos requires LearnScroll Pro. There are no ads.
 
 ## LearnScroll Pro (yearly)
 - Price: $29.99/year (US) · £29.99 (UK) · €34.99 (Germany, France) · 1.499,99 TL (Turkey)
@@ -357,7 +357,7 @@ Videolar Türkçe ya da İngilizce üretilir; dil materyalinden otomatik algıla
 | Pro yıllık | 1.499,99 TL / yıl · Yeni abonelere 3 gün ücretsiz | Ayda 12 yükleme, yükleme başına 150 ana fikre kadar (derin mod), quiz, aralıklı tekrar, reklam yok |
 | Pro aylık | 249,99 TL / ay | Yıllıkla aynı |
 
-Ücretsiz katman yok, video üretmek için Pro gerekir. App Store ayarlarından istediğin zaman iptal edebilirsin.
+İlk yüklemen ücretsiz: kendi notundan 6 kart, hesap gerekmez. Materyalinin kalanını videoya çevirmek için Pro gerekir. App Store ayarlarından istediğin zaman iptal edebilirsin.
 
 ## Sık sorulanlar
 
