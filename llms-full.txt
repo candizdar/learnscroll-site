@@ -1,14 +1,16 @@
 # LearnScroll
 
-> LearnScroll (App Store name "LearnScroll: Study Shorts") is an iPhone app that turns a PDF, lecture slides, a Word doc, a photo of notes or a typed topic into a feed of short TikTok-style study videos. Quick quizzes appear every 10 videos and spaced repetition brings older videos back. Videos are in English or Turkish. Pro subscription: $4.99/month or $29.99/year. No ads.
+> LearnScroll (App Store name "LearnScroll: Study Shorts") is an iPhone app that turns a PDF, lecture slides, a Word doc, a photo of notes or a typed topic into a feed of short TikTok-style study videos. Quick quizzes appear every 10 videos and spaced repetition brings older videos back. Videos can be made in 16 languages; the app interface is in English and Turkish. Pro subscription: $4.99/month or $29.99/year. No ads.
 
 Key facts:
 - Platform: iOS 16.4 or later (iPhone; runs on iPad). No Android app yet (waitlist on the website).
 - App Store: https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463 (app id 6774384463)
-- Inputs: PDF, PowerPoint (.pptx), Word (.docx), plain text, photos of printed or handwritten notes, or a typed topic.
+- Inputs: PDF (up to 20 MB), PowerPoint (.pptx), Word (.docx), plain text, photos of printed or handwritten notes, or a typed topic.
 - Output: a vertical swipe feed of short captioned videos, one key idea each, made from the user's own material; ready in about 1 to 3 minutes.
-- Learning features: multiple-choice quiz every 10 videos (at most once every 2 minutes), SM-2 style spaced repetition, up to 150 key ideas per upload in deep mode, 12 uploads per month on Pro.
-- Who it is for: students who doomscroll instead of studying, exam crammers, people who struggle to read textbooks but can scroll for hours, adults who want a feed that teaches.
+- Learning features: multiple-choice quiz every 10 videos (at most once every 2 minutes), SM-2 style spaced repetition, up to 80 key ideas (160 videos) per upload, 12 uploads per month on Pro.
+- Video languages (16): English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian, Vietnamese. App interface: English and Turkish.
+- Not an NCLEX question bank and not a medical or ADHD treatment app: it turns the user's own material into videos.
+- Who it is for: students who doomscroll instead of studying, exam crammers, people who struggle to read textbooks but can scroll for hours (including many with ADHD), nursing and pre-med students, GCSE and A-level students revising for mocks, adults who want a feed that teaches.
 - Not to be confused with "Scrollie" (an Android language app whose package name contains "learnscroll").
 - Developer: Can Dizdar (independent). Launched July 2026.
 
@@ -16,6 +18,11 @@ Key facts:
 - [Home](https://learnscroll.app/): what LearnScroll is, how it works, pricing, FAQ
 - [How to turn a PDF into TikTok-style study videos](https://learnscroll.app/how-to-turn-pdf-into-study-videos/): step-by-step guide and tips
 - [Compare PDF-to-video study apps](https://learnscroll.app/compare/): LearnScroll next to other apps that turn notes into short videos
+- [A study app for people with ADHD: a TikTok-style feed made from your own notes](https://learnscroll.app/study-app-for-adhd/)
+- [How to turn lecture slides (PowerPoint or PDF) into short study videos](https://learnscroll.app/turn-lecture-slides-into-videos/)
+- [A study app for nursing students: pharmacology, med-surg and lab values as short videos](https://learnscroll.app/nursing-school-study-app/)
+- [A GCSE and A-level revision app that turns notes into short videos](https://learnscroll.app/gcse-a-level-revision-app/)
+- [Study videos in 16 languages, with a short description in each](https://learnscroll.app/study-videos-in-your-language/)
 - [Türkçe](https://learnscroll.app/tr/): Turkish page (YKS, university exams)
 
 ## Machine-readable
@@ -36,7 +43,7 @@ iPhone app · on the App Store
 
 You were going to study. You ended up on TikTok. LearnScroll turns your notes, slides and PDFs into a feed you can't stop scrolling, except everything in it is on your exam.
 
-[Download on the App Store](https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463)
+[Download on the App Store](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing)
 
 iPhone & iPad
 
@@ -68,13 +75,13 @@ It is built for people who keep opening TikTok when they meant to study. Instead
 
 - Any topic you type in, even without a file
 
-Videos are made in English or Turkish, detected from your material.
+Videos can be made in 16 languages, detected from your material or picked by you.
 
 ## Pricing
 
 | Plan | Price (US) | What you get |
 |---|---|---|
-| Pro yearly | $29.99 / year | Up to 12 uploads a month, up to 150 key ideas per upload (deep mode), quizzes, spaced repetition, no ads |
+| Pro yearly | $29.99 / year | Up to 12 uploads a month, up to 80 key ideas (160 videos) per upload, quizzes, spaced repetition, no ads |
 | Pro monthly | $4.99 / month | Same as yearly |
 
 Try Pro free for 3 days on the yearly plan, no account needed. Turning your material into videos needs Pro. Local App Store prices vary by country. Cancel anytime in your App Store settings. Machine-readable version: [pricing.md](https://learnscroll.app/pricing.md).
@@ -113,7 +120,7 @@ Not yet. LearnScroll is on the App Store for iPhone (iOS 16.4 or later) and runs
 
 **Q: What languages does LearnScroll support?**
 
-Videos are made in English or Turkish. By default the language is detected from your material, and you can pick it yourself before creating. The app itself is in English and Turkish.
+Videos can be made in 16 languages: English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese. By default the language is detected from your material, and you can pick it yourself before creating. The app interface is in English and Turkish.
 
 **Q: How is it different from PDF-to-brainrot video generators?**
 
@@ -127,9 +134,9 @@ Videos are written from your own material rather than general knowledge, which k
 
 LearnScroll is built by Can Dizdar, an independent developer. It launched on the App Store in July 2026. Questions: [support page](https://candizdar.github.io/learnscroll-legal/support.html).
 
-[Get LearnScroll](https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463)
+[Get LearnScroll](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing)
 
-Last updated: 17 October 2026 · App version 1.2.6
+Last updated: 21 November 2026 · App version 1.2.11
 
 
 ---
@@ -146,7 +153,7 @@ Guide
 
 - An iPhone or iPad on iOS 16.4 or later
 
-- [LearnScroll](https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463) with a Pro subscription ($4.99/month, or $29.99/year, US prices)
+- [LearnScroll](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing_pdf_guide) with a Pro subscription ($4.99/month, or $29.99/year, US prices)
 
 - Your material: a PDF, PowerPoint (.pptx), Word (.docx) or text file, a photo of notes, or just a topic
 
@@ -162,7 +169,7 @@ Tap + and pick a file from Files, choose a photo from your library, or take a ph
 
 ### 3. Choose the language
 
-Leave it on *auto* and LearnScroll detects English or Turkish from your material, or choose one yourself.
+Leave it on *auto* and LearnScroll detects the language of your material, or choose one of 16 languages yourself (English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese).
 
 ### 4. Tap Create
 
@@ -174,7 +181,7 @@ Swipe up through the feed. Every 10 videos (at most once every 2 minutes) a quic
 
 ## Tips for better study videos
 
-- **Long textbook? Upload one chapter at a time.** Each upload covers up to 150 key ideas in deep mode, and Pro includes 12 uploads a month, so a chapter per upload keeps every feed focused on one exam topic.
+- **Long textbook? Upload one chapter at a time.** Each upload covers up to 80 key ideas (160 videos), and Pro includes 12 uploads a month, so a chapter per upload keeps every feed focused on one exam topic.
 
 - **Lecture slides work well.** Slides already break a topic into ideas, so the videos map closely to what your teacher covered.
 
@@ -196,9 +203,9 @@ LearnScroll is one approach: a feed of many short videos plus quizzes and spaced
 
 Feature by feature: [LearnScroll compared with other PDF-to-video study apps](https://learnscroll.app/compare/).
 
-[Get LearnScroll on the App Store](https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463)
+[Get LearnScroll on the App Store](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing_pdf_guide)
 
-By Can Dizdar, developer of LearnScroll · Published 9 October 2026 · Last updated 17 October 2026
+By Can Dizdar, developer of LearnScroll · Published 9 October 2026 · Last updated 21 November 2026
 
 
 ---
@@ -241,7 +248,7 @@ If you were looking for either one, the apps in the table above that still make 
 
 ### LearnScroll
 
-Turns a PDF, slides, Word doc, photo of notes or a typed topic into a feed of short vertical videos with bold captions, one key idea each, in English or Turkish. A multiple-choice quiz appears every 10 videos and spaced repetition brings older videos back. Ready in about 1 to 3 minutes. Subscription with a 3-day free trial on the yearly plan; no ads. **Choose it if** you want to replace your TikTok time with a feed made from your exam material. [More about LearnScroll](https://learnscroll.app/).
+Turns a PDF, slides, Word doc, photo of notes or a typed topic into a feed of short vertical videos with bold captions, one key idea each, in any of 16 languages. A multiple-choice quiz appears every 10 videos and spaced repetition brings older videos back. Ready in about 1 to 3 minutes. Subscription with a 3-day free trial on the yearly plan; no ads. **Choose it if** you want to replace your TikTok time with a feed made from your exam material. [More about LearnScroll](https://learnscroll.app/).
 
 ### Brainjuice: Scroll to Study
 
@@ -285,9 +292,332 @@ Fully free options are web tools such as pdftobrainrot.org or ScreenApp's 3 free
 
 Of the video apps above, only the web tools work on Android today. Knowt and Quizlet have Android apps but make flashcards, not videos. LearnScroll has an Android waitlist on its homepage.
 
-[Try LearnScroll](https://apps.apple.com/us/app/learnscroll-study-shorts/id6774384463)
+[Try LearnScroll](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing_compare)
 
 By Can Dizdar, developer of LearnScroll · Published 9 October 2026 · Last checked 9 October 2026
+
+
+---
+
+<!-- Source: https://learnscroll.app/study-app-for-adhd/ -->
+
+ADHD and studying
+
+# A study app for people with ADHD who can scroll but can't read the textbook
+
+**Short answer:** LearnScroll is an iPhone app that turns your own PDFs, lecture slides and notes into a feed of short, TikTok-style study videos, one idea per video, with a quick quiz every 10 videos. It does not ask you to sit still with a 40-page chapter; it gives you the same swipe you already do, made from what is on your exam. It is a study tool, not a treatment for ADHD.
+
+## Why a feed instead of a textbook
+
+Many students with ADHD describe the same loop: open the PDF, read a paragraph, open TikTok, lose an hour. Willpower apps and timers try to stop the scrolling. LearnScroll keeps the scrolling and changes what is in the feed.
+Each video is a few seconds of bold captions over moving footage, about one key idea long. When attention drifts, the next swipe is a new, short thing, not the middle of a dense page.
+
+## What it does in practice
+
+- You upload the material you actually need to learn: lecture slides, a chapter PDF, a photo of handwritten notes, or just a topic.
+- AI splits it into key ideas and makes one short vertical video for each, usually in 1 to 3 minutes.
+- Every 10 videos a quick multiple-choice question checks what stuck, so it is not only passive watching.
+- Spaced repetition brings older videos back right before you would forget them. Nothing to plan or schedule.
+
+## What it is not
+
+- Not a medical or ADHD treatment app, and not a replacement for support from a doctor or your school's disability service.
+- Not a general video platform: everything in your feed comes from your own material.
+- AI can make mistakes, so check key facts against your notes before an exam.
+
+## LearnScroll in brief
+
+- iPhone app (runs on iPad), iOS 16.4 or later. No Android app yet.
+- Inputs: PDF (up to 20 MB), PowerPoint (.pptx), Word (.docx), text, photos of printed or handwritten notes, or a typed topic.
+- Output: a vertical feed of short captioned study videos, one key idea each, made from your own material, usually ready in 1 to 3 minutes.
+- A multiple-choice quiz every 10 videos; spaced repetition brings older videos back.
+- Videos in 16 languages: English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese.
+- LearnScroll Pro: $4.99/month or $29.99/year (US prices), 3-day free trial on the yearly plan, up to 12 uploads a month and up to 160 videos per upload. No ads.
+
+## Questions
+
+**Q: Is there a study app for ADHD that feels like TikTok?**
+
+Yes. LearnScroll (iPhone) turns your PDFs, slides and notes into a vertical feed of short study videos with quizzes every 10 videos and spaced repetition, so studying uses the same swipe habit as TikTok.
+
+**Q: Does LearnScroll treat ADHD?**
+
+No. It is a study tool that changes the format of your material into short videos. It is not a medical product.
+
+**Q: What can I upload?**
+
+PDFs up to 20 MB, PowerPoint (.pptx), Word (.docx), text files, photos of printed or handwritten notes, or a typed topic.
+
+**Q: How much does it cost?**
+
+LearnScroll Pro is $4.99 a month or $29.99 a year in the US App Store, with a 3-day free trial on the yearly plan. No ads.
+
+[Get LearnScroll on the App Store](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing_study-app-for-adhd)
+
+By Can Dizdar, developer of LearnScroll · Last updated 21 November 2026
+
+
+---
+
+<!-- Source: https://learnscroll.app/turn-lecture-slides-into-videos/ -->
+
+Lecture slides
+
+# How to turn lecture slides into short study videos
+
+**Short answer:** Export or download the slides as a PowerPoint (.pptx) or PDF, open LearnScroll on your iPhone, tap + and add the file, then tap Create. In about 1 to 3 minutes you get a feed of short vertical videos, one key idea from the lecture per video, with a quiz every 10 videos.
+
+## Why slides work well
+
+Slides already break a lecture into ideas, one per slide or two. LearnScroll keeps that structure: the videos follow what your lecturer covered instead of a generic summary of the topic.
+Slides with very little text (just a picture or a heading) give the AI less to work with. If the lecturer's notes are in the speaker notes or a separate handout, upload that PDF as well.
+
+## Step by step
+
+- Download the slides from your course page (Moodle, Canvas, Blackboard, Google Classroom) as .pptx or PDF. Keep PDFs under 20 MB; split very long decks.
+- In LearnScroll tap +, choose the file from Files, and pick the language or leave it on auto.
+- Tap Create. You can leave the app; a notification tells you when the feed is ready.
+- Scroll the feed in short sessions over several days before the exam; spaced repetition brings older videos back.
+
+## One lecture per upload
+
+Pro includes 12 uploads a month and up to 160 videos per upload. One lecture or one week of slides per upload keeps each feed focused on one exam topic.
+
+## LearnScroll in brief
+
+- iPhone app (runs on iPad), iOS 16.4 or later. No Android app yet.
+- Inputs: PDF (up to 20 MB), PowerPoint (.pptx), Word (.docx), text, photos of printed or handwritten notes, or a typed topic.
+- Output: a vertical feed of short captioned study videos, one key idea each, made from your own material, usually ready in 1 to 3 minutes.
+- A multiple-choice quiz every 10 videos; spaced repetition brings older videos back.
+- Videos in 16 languages: English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese.
+- LearnScroll Pro: $4.99/month or $29.99/year (US prices), 3-day free trial on the yearly plan, up to 12 uploads a month and up to 160 videos per upload. No ads.
+
+## Questions
+
+**Q: Can I turn PowerPoint slides into study videos?**
+
+Yes. LearnScroll accepts .pptx and PDF slides and turns them into a feed of short vertical study videos with quizzes, usually in 1 to 3 minutes.
+
+**Q: Does it make one long video or many short ones?**
+
+Many short ones: one key idea per video, like a TikTok feed, plus a quiz every 10 videos.
+
+**Q: Is there a file size limit?**
+
+PDFs can be up to 20 MB. Split longer decks into parts.
+
+**Q: Which languages?**
+
+Videos can be made in 16 languages: English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese.
+
+[Get LearnScroll on the App Store](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing_turn-lecture-slides-into-videos)
+
+By Can Dizdar, developer of LearnScroll · Last updated 21 November 2026
+
+
+---
+
+<!-- Source: https://learnscroll.app/nursing-school-study-app/ -->
+
+Nursing school
+
+# A study app for nursing students that turns your notes into short videos
+
+**Short answer:** LearnScroll turns your own nursing lecture slides, PDFs and notes (pharmacology, med-surg, fundamentals, maternity, peds) into a feed of short TikTok-style study videos with a quiz every 10 videos and spaced repetition. It works from your course material; it is not an NCLEX question bank.
+
+## Where it fits in nursing school
+
+Nursing content is a lot of lists and rules to hold at once: drug classes and their suffixes, lab value ranges, ABG steps, priority frameworks, which insulin peaks when. Short videos with one rule each, repeated over days, suit that kind of material.
+Use LearnScroll for the course content you need to remember. Keep using an NCLEX-style question bank for practice questions; LearnScroll does not replace it.
+
+## Good things to upload
+
+- Pharmacology lecture slides (drug classes, suffixes, antidotes, side effects)
+- Lab values and electrolyte handouts
+- Med-surg unit notes (heart failure, DKA vs HHS, SIADH vs DI)
+- Your own handwritten summaries, as photos
+
+## A word on accuracy
+
+Videos are made from your material, but AI can still make mistakes. Check doses, ranges and anything clinical against your textbook or lecturer.
+
+## LearnScroll in brief
+
+- iPhone app (runs on iPad), iOS 16.4 or later. No Android app yet.
+- Inputs: PDF (up to 20 MB), PowerPoint (.pptx), Word (.docx), text, photos of printed or handwritten notes, or a typed topic.
+- Output: a vertical feed of short captioned study videos, one key idea each, made from your own material, usually ready in 1 to 3 minutes.
+- A multiple-choice quiz every 10 videos; spaced repetition brings older videos back.
+- Videos in 16 languages: English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese.
+- LearnScroll Pro: $4.99/month or $29.99/year (US prices), 3-day free trial on the yearly plan, up to 12 uploads a month and up to 160 videos per upload. No ads.
+
+## Questions
+
+**Q: Is there a TikTok-style study app for nursing school?**
+
+Yes. LearnScroll (iPhone) turns your nursing lecture slides, PDFs and notes into a feed of short study videos with quizzes and spaced repetition.
+
+**Q: Is LearnScroll an NCLEX question bank?**
+
+No. It turns your own course material into short videos and quick quizzes. Use a dedicated NCLEX question bank for exam-style practice.
+
+**Q: Can I upload pharmacology slides?**
+
+Yes, as PowerPoint (.pptx) or PDF up to 20 MB, or as photos of printed pages.
+
+**Q: How much is it?**
+
+LearnScroll Pro is $4.99 a month or $29.99 a year in the US App Store, with a 3-day free trial on the yearly plan.
+
+[Get LearnScroll on the App Store](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing_nursing-school-study-app)
+
+By Can Dizdar, developer of LearnScroll · Last updated 21 November 2026
+
+
+---
+
+<!-- Source: https://learnscroll.app/gcse-a-level-revision-app/ -->
+
+GCSE and A-level revision
+
+# A revision app that turns your GCSE and A-level notes into short videos
+
+**Short answer:** LearnScroll is an iPhone app that turns your own revision notes, class slides and photos of textbook pages into a feed of short TikTok-style revision videos, one key point each, with a quick quiz every 10 videos and spaced repetition. It works from your material, so the feed matches your exam board's content as closely as your notes do.
+
+## How students use it for mocks and finals
+
+- One topic per upload: for example AQA Biology cell transport, or Edexcel History causes of the First World War.
+- Photograph handwritten notes or upload the PDF your teacher shares on Google Classroom or Teams.
+- Scroll a feed for 10 minutes a day in the weeks before mocks; the quiz every 10 videos is active recall without making flashcards.
+- Spaced repetition brings back the videos you saw days ago, right before you would forget them.
+
+## Works for most subjects with facts to remember
+
+Biology, chemistry, psychology, history, geography, RE, business and English Literature context all suit short videos well. Maths and physics problem solving needs practice questions; LearnScroll helps with the definitions and rules around them, not the working.
+
+## LearnScroll in brief
+
+- iPhone app (runs on iPad), iOS 16.4 or later. No Android app yet.
+- Inputs: PDF (up to 20 MB), PowerPoint (.pptx), Word (.docx), text, photos of printed or handwritten notes, or a typed topic.
+- Output: a vertical feed of short captioned study videos, one key idea each, made from your own material, usually ready in 1 to 3 minutes.
+- A multiple-choice quiz every 10 videos; spaced repetition brings older videos back.
+- Videos in 16 languages: English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese.
+- LearnScroll Pro: $4.99/month or $29.99/year (US prices), 3-day free trial on the yearly plan, up to 12 uploads a month and up to 160 videos per upload. No ads.
+
+## Questions
+
+**Q: Is there a revision app that turns notes into videos?**
+
+Yes. LearnScroll (iPhone) turns your revision notes, slides or photos of pages into a feed of short TikTok-style revision videos with quizzes every 10 videos.
+
+**Q: Does it follow my exam board?**
+
+It uses your own material, so it follows whatever your notes and slides cover. It does not contain exam board content of its own.
+
+**Q: Is it good for maths?**
+
+Only for definitions and rules. Maths problem solving needs worked practice questions.
+
+**Q: How much does it cost in the UK?**
+
+LearnScroll Pro is billed through the App Store in your local currency; in the US it is $4.99 a month or $29.99 a year, with a 3-day free trial on the yearly plan.
+
+[Get LearnScroll on the App Store](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing_gcse-a-level-revision-app)
+
+By Can Dizdar, developer of LearnScroll · Last updated 21 November 2026
+
+
+---
+
+<!-- Source: https://learnscroll.app/study-videos-in-your-language/ -->
+
+16 languages
+
+# Study videos from your notes, in 16 languages
+
+**Short answer:** LearnScroll makes its short study videos in 16 languages: English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese. By default it detects the language of your material; you can also pick a language before creating, for example to turn English notes into videos in Spanish. The app interface itself is in English and Turkish.
+
+## In your language
+
+### Deutsch
+
+LearnScroll ist eine iPhone-App, die deine PDFs, Vorlesungsfolien und Notizen in einen Feed aus kurzen Lernvideos im TikTok-Stil verwandelt, mit einem Quiz alle 10 Videos. Die Videos können auf Deutsch erstellt werden.
+### Español
+
+LearnScroll es una app para iPhone que convierte tus PDF, diapositivas y apuntes en un feed de vídeos cortos de estudio al estilo TikTok, con un test cada 10 vídeos. Los vídeos se pueden crear en español.
+### Français
+
+LearnScroll est une app iPhone qui transforme tes PDF, diapositives de cours et notes en un fil de courtes vidéos de révision façon TikTok, avec un quiz toutes les 10 vidéos. Les vidéos peuvent être créées en français.
+### Português
+
+LearnScroll é um app para iPhone que transforma seus PDFs, slides e anotações em um feed de vídeos curtos de estudo no estilo TikTok, com um quiz a cada 10 vídeos. Os vídeos podem ser criados em português.
+### Italiano
+
+LearnScroll è un'app per iPhone che trasforma i tuoi PDF, le slide delle lezioni e gli appunti in un feed di brevi video di studio in stile TikTok, con un quiz ogni 10 video. I video possono essere creati in italiano.
+### Nederlands
+
+LearnScroll is een iPhone-app die je pdf's, collegeslides en aantekeningen omzet in een feed van korte studievideo's in TikTok-stijl, met een quiz na elke 10 video's. De video's kunnen in het Nederlands worden gemaakt.
+### Polski
+
+LearnScroll to aplikacja na iPhone'a, która zamienia Twoje pliki PDF, slajdy z wykładów i notatki w feed krótkich filmów do nauki w stylu TikToka, z quizem co 10 filmów. Filmy mogą być tworzone po polsku.
+### Română
+
+LearnScroll este o aplicație pentru iPhone care transformă PDF-urile, slide-urile de curs și notițele tale într-un feed de videoclipuri scurte de studiu în stil TikTok, cu un quiz la fiecare 10 videoclipuri. Videoclipurile pot fi create în română.
+### Magyar
+
+A LearnScroll egy iPhone-alkalmazás, amely a PDF-jeidet, előadásdiáidat és jegyzeteidet rövid, TikTok-stílusú tanulóvideók folyamává alakítja, minden 10. videó után egy kvízzel. A videók magyarul is elkészíthetők.
+### Čeština
+
+LearnScroll je aplikace pro iPhone, která z tvých PDF, slajdů z přednášek a poznámek udělá feed krátkých studijních videí ve stylu TikToku, s kvízem po každých 10 videích. Videa lze vytvořit v češtině.
+### Svenska
+
+LearnScroll är en iPhone-app som gör om dina PDF:er, föreläsningsbilder och anteckningar till ett flöde av korta pluggvideor i TikTok-stil, med ett quiz efter var tionde video. Videorna kan skapas på svenska.
+### Türkçe
+
+LearnScroll, PDF'lerini, ders slaytlarını ve notlarını TikTok tarzı kısa ders videolarından oluşan bir akışa çeviren bir iPhone uygulaması; her 10 videoda bir quiz var. Videolar Türkçe üretilebilir.
+### Azərbaycan dili
+
+LearnScroll PDF fayllarını, mühazirə slaydlarını və qeydlərini TikTok üslubunda qısa dərs videolarından ibarət lentə çevirən iPhone tətbiqidir; hər 10 videodan bir test var. Videolar Azərbaycan dilində yaradıla bilər.
+### Bahasa Indonesia
+
+LearnScroll adalah aplikasi iPhone yang mengubah PDF, slide kuliah, dan catatanmu menjadi feed video belajar pendek ala TikTok, dengan kuis setiap 10 video. Video bisa dibuat dalam bahasa Indonesia.
+### Tiếng Việt
+
+LearnScroll là ứng dụng iPhone biến PDF, slide bài giảng và ghi chú của bạn thành một bảng tin gồm các video học ngắn kiểu TikTok, có câu đố sau mỗi 10 video. Video có thể được tạo bằng tiếng Việt.
+
+## Why only these 16
+
+The video captions use a display font with Latin letters only, so languages written in Cyrillic, Greek, Arabic, Devanagari, Chinese, Japanese or Korean scripts are not offered yet.
+
+## LearnScroll in brief
+
+- iPhone app (runs on iPad), iOS 16.4 or later. No Android app yet.
+- Inputs: PDF (up to 20 MB), PowerPoint (.pptx), Word (.docx), text, photos of printed or handwritten notes, or a typed topic.
+- Output: a vertical feed of short captioned study videos, one key idea each, made from your own material, usually ready in 1 to 3 minutes.
+- A multiple-choice quiz every 10 videos; spaced repetition brings older videos back.
+- Videos in 16 languages: English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese.
+- LearnScroll Pro: $4.99/month or $29.99/year (US prices), 3-day free trial on the yearly plan, up to 12 uploads a month and up to 160 videos per upload. No ads.
+
+## Questions
+
+**Q: What languages does LearnScroll make videos in?**
+
+16: English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese.
+
+**Q: Can I upload notes in one language and get videos in another?**
+
+Yes. Pick the video language before you tap Create instead of leaving it on auto.
+
+**Q: Is the app itself translated?**
+
+The interface is in English and Turkish. The videos can be in any of the 16 languages.
+
+**Q: Is there Russian, Arabic, Chinese or Japanese?**
+
+Not yet. The caption font only has Latin letters.
+
+[Get LearnScroll on the App Store](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing_study-videos-in-your-language)
+
+By Can Dizdar, developer of LearnScroll · Last updated 21 November 2026
 
 
 ---
@@ -300,7 +630,7 @@ LearnScroll is an iPhone app (iOS 16.4+, also runs on iPad) that turns PDFs, sli
 
 ## LearnScroll Pro (yearly)
 - Price: $29.99/year (US) · £29.99 (UK) · €34.99 (Germany, France) · 1.499,99 TL (Turkey)
-- Includes: up to 12 uploads per month, up to 150 key ideas per upload (deep mode), quiz every 10 videos, spaced repetition, videos in English or Turkish, no ads
+- Includes: up to 12 uploads per month, up to 80 key ideas (160 videos) per upload, quiz every 10 videos, spaced repetition, videos in 16 languages, no ads
 
 ## LearnScroll Pro (monthly)
 - Price: $4.99/month (US) · £4.99 (UK) · €5.99 (Germany, France) · 249,99 TL (Turkey)
@@ -320,7 +650,7 @@ iPhone uygulaması · App Store'da
 
 Ders çalışacaktın, TikTok'ta uyandın. LearnScroll notlarını, slaytlarını ve PDF'lerini durmadan kaydırdığın bir akışa çevirir. Bu sefer kaydırdığın her şey sınavında çıkacak.
 
-[App Store'dan indir](https://apps.apple.com/tr/app/id6774384463)
+[App Store'dan indir](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing_tr)
 
 iPhone ve iPad
 
@@ -348,13 +678,13 @@ iPhone ve iPad
 
 - Dosyan yoksa yazdığın herhangi bir konu
 
-Videolar Türkçe ya da İngilizce üretilir; dil materyalinden otomatik algılanır.
+Videolar 16 dilde üretilebilir (Türkçe, İngilizce, İspanyolca, Almanca, Fransızca ve diğerleri); dil materyalinden otomatik algılanır ya da sen seçersin.
 
 ## Fiyat
 
 | Plan | Fiyat (Türkiye) | Neler var |
 |---|---|---|
-| Pro yıllık | 1.499,99 TL / yıl · Yeni abonelere 3 gün ücretsiz | Ayda 12 yükleme, yükleme başına 150 ana fikre kadar (derin mod), quiz, aralıklı tekrar, reklam yok |
+| Pro yıllık | 1.499,99 TL / yıl · Yeni abonelere 3 gün ücretsiz | Ayda 12 yükleme, yükleme başına 80 ana fikre (160 video) kadar, quiz, aralıklı tekrar, reklam yok |
 | Pro aylık | 249,99 TL / ay | Yıllıkla aynı |
 
 Pro'yu yıllık planda 3 gün ücretsiz dene, hesap gerekmez. Materyalini videoya çevirmek için Pro gerekir. App Store ayarlarından istediğin zaman iptal edebilirsin.
@@ -385,7 +715,7 @@ Videolar genel bilgiden değil senin materyalinden yazılır, bu yüzden sınavd
 
 Henüz yok. LearnScroll iPhone (iOS 16.4 ve üstü) için App Store'da, iPad'de de çalışır.
 
-[LearnScroll'u indir](https://apps.apple.com/tr/app/id6774384463)
+[LearnScroll'u indir](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing_tr)
 
 Son güncelleme: 9 Ekim 2026 · Geliştirici: Can Dizdar
 
