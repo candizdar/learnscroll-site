@@ -2,7 +2,7 @@
 
 Last updated: 2026-10-23. Prices are set by the App Store and vary by country.
 
-LearnScroll is an iPhone app (iOS 16.4+, also runs on iPad) that turns PDFs, slides, Word docs, photos of notes or a typed topic into a feed of short TikTok-style study videos. Making videos requires LearnScroll Pro; the yearly plan has a 3-day free trial for new subscribers. There are no ads.
+LearnScroll is an iPhone app (iOS 16.4+, also runs on iPad) that turns PDFs, slides, Word docs, photos of notes or a typed topic into a feed of short TikTok-style study videos. Making videos requires LearnScroll Pro. There are no ads.
 
 ## LearnScroll Pro (yearly)
 - Price: $29.99/year (US) · £29.99 (UK) · €34.99 (Germany, France) · 1.499,99 TL (Turkey)

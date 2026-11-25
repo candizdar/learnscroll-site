@@ -226,7 +226,7 @@ This page is written by the developer of LearnScroll, so read it with that in mi
 
 | App | Makes videos from your files | Format | Quiz / spaced repetition | Platforms | Price (US) |
 |---|---|---|---|---|---|
-| LearnScroll | Yes: PDF, PPTX, DOCX, TXT, photos, topic | Feed of short captioned videos, one idea each | Quiz every 10 videos; spaced repetition | iPhone, iPad | $4.99/mo or $29.99/yr. 3-day free trial on the yearly plan |
+| LearnScroll | Yes: PDF, PPTX, DOCX, TXT, photos, topic | Feed of short captioned videos, one idea each | Quiz every 10 videos; spaced repetition | iPhone, iPad | $4.99/mo or $29.99/yr |
 | Brainjuice | Yes: PDFs, YouTube, photos, topic | Short-video feed, summaries, AI chat | Quizzes; spaced repetition (stated) | iPhone, iPad | In-app plans from $2.99/week; Pro $9.99/mo or $79.99/yr listed |
 | Braintok | Yes: text, notes, PDFs, topic | Meme-style video, AI voice over Minecraft / Subway Surfers | None mentioned | iPhone, iPad | Weekly or monthly subscription ($2.99 to $19.99 listed) |
 | PDF Brainrot (iOS) | Yes: PDFs | Brainrot-style video | None mentioned | iPhone, iPad | 3 videos/week free; Pro $4.99/week |
@@ -248,7 +248,7 @@ If you were looking for either one, the apps in the table above that still make 
 
 ### LearnScroll
 
-Turns a PDF, slides, Word doc, photo of notes or a typed topic into a feed of short vertical videos with bold captions, one key idea each, in any of 16 languages. A multiple-choice quiz appears every 10 videos and spaced repetition brings older videos back. Ready in about 1 to 3 minutes. Subscription with a 3-day free trial on the yearly plan; no ads. **Choose it if** you want to replace your TikTok time with a feed made from your exam material. [More about LearnScroll](https://learnscroll.app/).
+Turns a PDF, slides, Word doc, photo of notes or a typed topic into a feed of short vertical videos with bold captions, one key idea each, in any of 16 languages. A multiple-choice quiz appears every 10 videos and spaced repetition brings older videos back. Ready in about 1 to 3 minutes. Subscription; no ads. **Choose it if** you want to replace your TikTok time with a feed made from your exam material. [More about LearnScroll](https://learnscroll.app/).
 
 ### Brainjuice: Scroll to Study
 
@@ -286,7 +286,7 @@ Not on the App Store as of 9 October 2026: its US page returns 404 and Apple's l
 
 **Q: Is there a free app that turns PDFs into study videos?**
 
-Fully free options are web tools such as pdftobrainrot.org or ScreenApp's 3 free uploads. PDF Brainrot on iOS allows 3 videos a week for free. LearnScroll has a 3-day free trial on its yearly plan.
+Fully free options are web tools such as pdftobrainrot.org or ScreenApp's 3 free uploads. PDF Brainrot on iOS allows 3 videos a week for free.
 
 **Q: What about Android?**
 
@@ -332,7 +332,7 @@ Each video is a few seconds of bold captions over moving footage, about one key 
 - Output: a vertical feed of short captioned study videos, one key idea each, made from your own material, usually ready in 1 to 3 minutes.
 - A multiple-choice quiz every 10 videos; spaced repetition brings older videos back.
 - Videos in 16 languages: English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese.
-- LearnScroll Pro: $4.99/month or $29.99/year (US prices), 3-day free trial on the yearly plan, up to 12 uploads a month and up to 160 videos per upload. No ads.
+- LearnScroll Pro: $4.99/month or $29.99/year (US prices), up to 12 uploads a month and up to 160 videos per upload. No ads.
 
 ## Questions
 
@@ -350,7 +350,7 @@ PDFs up to 20 MB, PowerPoint (.pptx), Word (.docx), text files, photos of printe
 
 **Q: How much does it cost?**
 
-LearnScroll Pro is $4.99 a month or $29.99 a year in the US App Store, with a 3-day free trial on the yearly plan. No ads.
+LearnScroll Pro is $4.99 a month or $29.99 a year in the US App Store. No ads.
 
 [Get LearnScroll on the App Store](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing_study-app-for-adhd)
 
@@ -390,7 +390,7 @@ Pro includes 12 uploads a month and up to 160 videos per upload. One lecture or 
 - Output: a vertical feed of short captioned study videos, one key idea each, made from your own material, usually ready in 1 to 3 minutes.
 - A multiple-choice quiz every 10 videos; spaced repetition brings older videos back.
 - Videos in 16 languages: English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese.
-- LearnScroll Pro: $4.99/month or $29.99/year (US prices), 3-day free trial on the yearly plan, up to 12 uploads a month and up to 160 videos per upload. No ads.
+- LearnScroll Pro: $4.99/month or $29.99/year (US prices), up to 12 uploads a month and up to 160 videos per upload. No ads.
 
 ## Questions
 
@@ -448,7 +448,7 @@ Videos are made from your material, but AI can still make mistakes. Check doses,
 - Output: a vertical feed of short captioned study videos, one key idea each, made from your own material, usually ready in 1 to 3 minutes.
 - A multiple-choice quiz every 10 videos; spaced repetition brings older videos back.
 - Videos in 16 languages: English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese.
-- LearnScroll Pro: $4.99/month or $29.99/year (US prices), 3-day free trial on the yearly plan, up to 12 uploads a month and up to 160 videos per upload. No ads.
+- LearnScroll Pro: $4.99/month or $29.99/year (US prices), up to 12 uploads a month and up to 160 videos per upload. No ads.
 
 ## Questions
 
@@ -466,7 +466,7 @@ Yes, as PowerPoint (.pptx) or PDF up to 20 MB, or as photos of printed pages.
 
 **Q: How much is it?**
 
-LearnScroll Pro is $4.99 a month or $29.99 a year in the US App Store, with a 3-day free trial on the yearly plan.
+LearnScroll Pro is $4.99 a month or $29.99 a year in the US App Store.
 
 [Get LearnScroll on the App Store](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing_nursing-school-study-app)
 
@@ -501,7 +501,7 @@ Biology, chemistry, psychology, history, geography, RE, business and English Lit
 - Output: a vertical feed of short captioned study videos, one key idea each, made from your own material, usually ready in 1 to 3 minutes.
 - A multiple-choice quiz every 10 videos; spaced repetition brings older videos back.
 - Videos in 16 languages: English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese.
-- LearnScroll Pro: $4.99/month or $29.99/year (US prices), 3-day free trial on the yearly plan, up to 12 uploads a month and up to 160 videos per upload. No ads.
+- LearnScroll Pro: $4.99/month or $29.99/year (US prices), up to 12 uploads a month and up to 160 videos per upload. No ads.
 
 ## Questions
 
@@ -519,7 +519,7 @@ Only for definitions and rules. Maths problem solving needs worked practice ques
 
 **Q: How much does it cost in the UK?**
 
-LearnScroll Pro is billed through the App Store in your local currency; in the US it is $4.99 a month or $29.99 a year, with a 3-day free trial on the yearly plan.
+LearnScroll Pro is billed through the App Store in your local currency; in the US it is $4.99 a month or $29.99 a year.
 
 [Get LearnScroll on the App Store](https://apps.apple.com/app/apple-store/id6774384463?pt=128611864&mt=8&ct=landing_gcse-a-level-revision-app)
 
@@ -595,7 +595,7 @@ The video captions use a display font with Latin letters only, so languages writ
 - Output: a vertical feed of short captioned study videos, one key idea each, made from your own material, usually ready in 1 to 3 minutes.
 - A multiple-choice quiz every 10 videos; spaced repetition brings older videos back.
 - Videos in 16 languages: English, Turkish, Spanish, German, French, Portuguese, Italian, Dutch, Polish, Romanian, Hungarian, Czech, Swedish, Azerbaijani, Indonesian and Vietnamese.
-- LearnScroll Pro: $4.99/month or $29.99/year (US prices), 3-day free trial on the yearly plan, up to 12 uploads a month and up to 160 videos per upload. No ads.
+- LearnScroll Pro: $4.99/month or $29.99/year (US prices), up to 12 uploads a month and up to 160 videos per upload. No ads.
 
 ## Questions
 
@@ -626,7 +626,7 @@ By Can Dizdar, developer of LearnScroll · Last updated 21 November 2026
 
 Last updated: 2026-10-23. Prices are set by the App Store and vary by country.
 
-LearnScroll is an iPhone app (iOS 16.4+, also runs on iPad) that turns PDFs, slides, Word docs, photos of notes or a typed topic into a feed of short TikTok-style study videos. Making videos requires LearnScroll Pro; the yearly plan has a 3-day free trial for new subscribers. There are no ads.
+LearnScroll is an iPhone app (iOS 16.4+, also runs on iPad) that turns PDFs, slides, Word docs, photos of notes or a typed topic into a feed of short TikTok-style study videos. Making videos requires LearnScroll Pro. There are no ads.
 
 ## LearnScroll Pro (yearly)
 - Price: $29.99/year (US) · £29.99 (UK) · €34.99 (Germany, France) · 1.499,99 TL (Turkey)
@@ -684,10 +684,10 @@ Videolar 16 dilde üretilebilir (Türkçe, İngilizce, İspanyolca, Almanca, Fra
 
 | Plan | Fiyat (Türkiye) | Neler var |
 |---|---|---|
-| Pro yıllık | 1.499,99 TL / yıl · Yeni abonelere 3 gün ücretsiz | Ayda 12 yükleme, yükleme başına 80 ana fikre (160 video) kadar, quiz, aralıklı tekrar, reklam yok |
+| Pro yıllık | 1.499,99 TL / yıl | Ayda 12 yükleme, yükleme başına 80 ana fikre (160 video) kadar, quiz, aralıklı tekrar, reklam yok |
 | Pro aylık | 249,99 TL / ay | Yıllıkla aynı |
 
-Pro'yu yıllık planda 3 gün ücretsiz dene, hesap gerekmez. Materyalini videoya çevirmek için Pro gerekir. App Store ayarlarından istediğin zaman iptal edebilirsin.
+Hesap gerekmez. Materyalini videoya çevirmek için Pro gerekir. App Store ayarlarından istediğin zaman iptal edebilirsin.
 
 ## Sık sorulanlar
 
